@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'Product Sans Bold';
+    src: url('../fonts/productsans-bold-webfont.woff2') format('woff2'),
+         url('../fonts/productsans-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Product Sans Light';
+    src: url('../fonts/productsans-light-webfont.woff2') format('woff2'),
+         url('../fonts/productsans-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Product Sans Regular';
+    src: url('../fonts/productsans-regular-webfont.woff2') format('woff2'),
+         url('../fonts/productsans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    color: #1C232B;
+}
+
+.hero {
+    background: #0055FF;
+    color: #FFF;
+    padding: 30px;
+}
+
+h1, h2, h3 {
+    font-family: 'Product Sans Bold';
+}
+
+h1 {
+    font-size: 2.4rem;
+}
+
+h2 {
+    font-size: 1.7rem;
+}
+
+h3 {
+    font-size: 1.35rem;
+}
