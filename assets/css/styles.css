@@ -16,45 +16,111 @@
     font-display: swap;
 }
 
-@font-face {
-    font-family: 'Product Sans Regular';
-    src: url('../fonts/productsans-regular-webfont.woff2') format('woff2'),
-         url('../fonts/productsans-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
 * {
     box-sizing: border-box;
 }
-
 body {
     margin: 0;
     padding: 0;
-    font-size: 18px;
+    font-size: 16px;
     font-family: 'Open Sans', sans-serif;
     color: #1C232B;
 }
 
-.hero {
-    background: #0055FF;
-    color: #FFF;
-    padding: 30px;
-}
-
+/* Títulos */
 h1, h2, h3 {
     font-family: 'Product Sans Bold';
+    margin-top: 0;
 }
-
 h1 {
     font-size: 2.4rem;
 }
-
 h2 {
     font-size: 1.7rem;
 }
-
 h3 {
     font-size: 1.35rem;
+}
+
+/* Utilities */
+.text-center {
+    text-align: center;
+}
+.wrapper {
+    padding: 0 30px;
+}
+
+/* Botones y enlaces */
+.button--link {
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    font-family: 'Product Sans Bold';
+    text-decoration: none;
+    color: #0055FF;
+}
+.button--primary {
+    text-transform: uppercase;
+    font-size: .85rem;
+    font-family: 'Product Sans Bold';
+    text-decoration: none;
+    background: #0055FF;
+    color: #FFF;
+    padding: 15px 45px;
+    border-radius: 2px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    display: inline-block;
+}
+.button--secondary {
+    text-transform: uppercase;
+    font-size: .85rem;
+    font-family: 'Product Sans Bold';
+    text-decoration: none;
+    border: solid 2px #0055FF;
+    color: #0055FF;
+    padding: 15px 45px;
+    border-radius: 2px;
+    display: inline-block;
+}
+a {
+    color: #0055FF;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#hero {
+    background: #FFF;
+    padding: 30px;
+}
+
+#last-projects, #about, #contact {
+    padding: 50px 0;
+}
+
+#last-projects {
+    background: url(../img/pattern.png), #FAFAFA;
+}
+
+/* Snippet Projecto */
+.project {
+    padding: 30px 25px;
+    background: #FFF;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);;
+}
+.project__role {
+    font-size: .85rem;
+}
+.project__title {
+    font-family: 'Product Sans Bold';
+    font-size: 1.75rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.project__img {
+    width: 100%;
+    height: 250px;
+}
+
+#about {
+    background: #0055FF;
+    color: #FFF;
 }
