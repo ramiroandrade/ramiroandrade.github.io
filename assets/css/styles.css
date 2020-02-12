@@ -15,7 +15,7 @@
     font-style: normal;
     font-display: swap;
 }
-
+/* Normalize */
 * {
     box-sizing: border-box;
 }
@@ -26,7 +26,6 @@ body {
     font-family: 'Open Sans', sans-serif;
     color: #1C232B;
 }
-
 img {
     display: block;
 }
@@ -100,16 +99,24 @@ a {
     color: #FFF;
 }
 
+/* Hero */
 #hero {
     background: #0055FF;
     color: #FFF;
     padding: 50px 30px;
+    height: 100vh;
+}
+.hero__wrapper {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
+/* Últimos projectos */
 #last-projects, #about, #contact {
     padding: 50px 0;
 }
-
 #last-projects {
     background: url(../img/pattern.png), #FAFAFA;
 }
