@@ -27,6 +27,10 @@ body {
     color: #1C232B;
 }
 
+img {
+    display: block;
+}
+
 /* Títulos */
 h1, h2, h3 {
     font-family: 'Product Sans Bold';
@@ -49,6 +53,10 @@ h3 {
 .wrapper {
     padding: 0 30px;
 }
+.center-align {
+    margin: 0 auto;
+    display: block!important;
+}
 
 /* Botones y enlaces */
 .button--link {
@@ -69,6 +77,7 @@ h3 {
     border-radius: 2px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
     display: inline-block;
+    text-align: center;
 }
 .button--secondary {
     text-transform: uppercase;
@@ -80,16 +89,21 @@ h3 {
     padding: 15px 45px;
     border-radius: 2px;
     display: inline-block;
+    text-align: center;
 }
 a {
     color: #0055FF;
     font-weight: bold;
     text-decoration: none;
 }
+#hero a, #about a {
+    color: #FFF;
+}
 
 #hero {
-    background: #FFF;
-    padding: 30px;
+    background: #0055FF;
+    color: #FFF;
+    padding: 50px 30px;
 }
 
 #last-projects, #about, #contact {
@@ -102,9 +116,13 @@ a {
 
 /* Snippet Projecto */
 .project {
-    padding: 30px 25px;
+    padding: 30px 25px 0 25px;
     background: #FFF;
-    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
+    margin-bottom: 70px;
+}
+.project .button--primary {
+    width: 100%;
 }
 .project__role {
     font-size: .85rem;
@@ -118,9 +136,17 @@ a {
 .project__img {
     width: 100%;
     height: 250px;
+    margin-top: 30px;
 }
 
 #about {
     background: #0055FF;
     color: #FFF;
+}
+#contact {
+    line-height: 1.85rem;
+}
+#credits {
+    padding: 5px 30px;
+    background: #F0F2F5;
 }
