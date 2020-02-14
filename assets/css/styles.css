@@ -284,7 +284,6 @@ label .menu {
   .menu__content {
     z-index: 200;
     position: fixed;
-    width: 100%;
     top: 50%;
     left: 50%;
     text-align: center;
