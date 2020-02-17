@@ -33,6 +33,10 @@ ul {
     list-style: none;
     padding-left: 0;
 }
+p {
+    margin-top: 0;
+    line-height: 1.8rem;
+}
 /* Títulos */
 h1, h2, h3 {
     font-family: 'Product Sans Bold';
@@ -59,7 +63,15 @@ h3 {
     margin: 0 auto;
     display: block!important;
 }
-
+.u-mb3 {
+    margin-bottom: 3rem;
+}
+.hide {
+    display: none;
+}
+.no-scroll {
+    overflow: hidden;
+}
 /* Botones y enlaces */
 .button--link {
     text-transform: uppercase;
@@ -175,7 +187,7 @@ a {
     font-family: 'Product Sans Bold';
     font-size: 1.75rem;
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 0.85rem;
 }
 .project__img img {
     width: 100%;
@@ -194,7 +206,7 @@ a {
     line-height: 1.85rem;
 }
 #credits {
-    padding: 5px 30px;
+    padding: 15px 30px;
     background: #F0F2F5;
 }
 
@@ -206,8 +218,17 @@ a {
     margin: -150px auto 50px auto;
     max-width: 94%;
 }
+.about__list {
+    margin: 0 0 3rem 0;
+}
 .about__list li {
     margin-bottom: 15px;
+}
+#about h2 {
+    margin: 0 0 .85rem 0;
+}
+#about p {
+    line-height: 1.8rem;
 }
 
 /* Menú */
