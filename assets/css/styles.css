@@ -28,6 +28,7 @@ body {
 }
 img {
     display: block;
+    width: 100%;
 }
 ul {
     list-style: none;
@@ -36,6 +37,9 @@ ul {
 p {
     margin-top: 0;
     line-height: 1.8rem;
+}
+p.destacado {
+    font-size: 1.25rem;
 }
 /* Títulos */
 h1, h2, h3 {
@@ -52,8 +56,8 @@ h2.especial::after {
     content: "";
     background: #FF6F00;
     margin: 5px auto;
-    width: 50px;
-    height: 4px;
+    width: 40px;
+    height: 5px;
     display: block;
 }
 h3 {
@@ -164,26 +168,7 @@ a {
     font-size: 1.4rem;
     margin-top: 0;
 }
-/* Hero Case Studies */
-#hero-case-study {
-    background: #0055FF;
-    color: #FFF;
-    padding: 110px 30px;
-    text-align: center;
-}
-#hero-case-study h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-}
-#hero-case-study p {
-    font-family: 'Product Sans Light';
-    font-size: 1.8rem;
-    margin-top: 0;
-    line-height: 2rem;
-}
-#hero-case-study img {
-    margin: 0 auto -250px auto;
-}
+
 
 #last-projects, #about, #contact, #projects, #mini-about {
     padding: 50px 0;
@@ -253,6 +238,52 @@ a {
 }
 #about p {
     line-height: 1.8rem;
+}
+
+/* Case Studies */
+#hero-case-study {
+    background: #0055FF;
+    color: #FFF;
+    padding: 110px 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+#hero-case-study h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+#hero-case-study p.destacado {
+    font-family: 'Product Sans Light';
+    font-size: 1.8rem;
+    margin-top: 0;
+    line-height: 2rem;
+}
+#hero-case-study img {
+    margin: 0 auto -250px auto;
+}
+#case-study {
+    padding: 200px 0 50px 0;
+}
+.case-study__info {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #F0F2F5;
+    padding: 30px;
+}
+#case-study .wrapper {
+    padding: 30px;
+}
+#case-study .wrapper img {
+    margin-bottom: 30px;
+}
+#case-study .wrapper h3 {
+    margin-bottom: .5rem;
+}
+.case-study__section {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
 }
 
 /* Menú */
@@ -399,5 +430,16 @@ label input:checked + .menu + .menu__content { opacity: 1; }
   @media screen and (min-width: 768px) {
 	.project {
 		flex-direction: row;
-	}
+    }
+    #hero-case-study {
+        flex-direction: row;
+    }
+    .case-study__info {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .case-study__section {
+        flex-direction: row-reverse;
+        justify-content: center;
+    }
   }
