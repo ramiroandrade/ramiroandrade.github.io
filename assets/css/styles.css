@@ -280,7 +280,33 @@ a {
 #about p {
     line-height: 1.8rem;
 }
-
+.about__list.suffer li::before {
+    content: "";
+    background: url(../img/cross.svg) center center no-repeat;
+    margin-right: .5rem;
+    width: 1rem;
+    height: 1rem;
+    display: inline-block;
+    vertical-align: middle;
+}
+.about__list.enjoy li::before {
+    content: "";
+    background: url(../img/check.svg) center center no-repeat;
+    margin-right: .5rem;
+    width: 1rem;
+    height: 1rem;
+    display: inline-block;
+    vertical-align: middle;
+}
+.about__list.random li::before {
+    content: "";
+    background: url(../img/blue-dot.svg) center center no-repeat;
+    margin-right: .5rem;
+    width: 1rem;
+    height: 1rem;
+    display: inline-block;
+    vertical-align: middle;
+}
 /* Formato Case Study */
 #hero-case-study {
     background: #0055FF;
@@ -302,7 +328,7 @@ a {
 }
 #hero-case-study img {
     margin: 0 auto -250px auto;
-    max-width: 550px;
+    max-width: 500px;
 }
 #case-study {
     padding: 200px 0 50px 0;
@@ -535,7 +561,7 @@ label input:checked + .menu + .menu__content { opacity: 1; }
     #hero-case-study {
         flex-direction: row;
         text-align: left;
-        padding-bottom: 0;
+        padding: 50px 30px 0 30px;
     }
     #hero-case-study .wrapper {
         display: flex;
