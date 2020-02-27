@@ -455,6 +455,8 @@ label input:checked + .menu + .menu__content { opacity: 1; }
 }
 .menu-open .menu__content {
     opacity: 1;
+    -webkit-transition: .4s .4s ease-in;
+    transition: .4s .4s ease-in;
 }
 
 
@@ -468,11 +470,8 @@ label input:checked + .menu + .menu__content { opacity: 1; }
     opacity: 0;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    -webkit-transition: .1s .3s ease-in;
-    transition: .1s .3s ease-in;
     color: #FFF;
     padding: 30px;
-    visibility: hidden;
 }
 .menu__content ul {
     list-style: none;
