@@ -343,6 +343,7 @@ a {
 }
 .case-study__info .wrapper p {
     margin-bottom: 0;
+    max-width: 800px;
 }
 #case-study .wrapper {
     padding: 30px;
@@ -359,7 +360,7 @@ a {
     margin-bottom: 30px;
 }
 /* Menú */
-body.menu-open {
+body.no-scroll {
     overflow: hidden;
 }
 .menu-open .menu__content {
@@ -580,6 +581,8 @@ label input:checked + .menu + .menu__content { opacity: 1; }
     }
     .case-study__info .wrapper h2 {
         margin: 0 2rem 0 0;
+        width: 140px;
+        text-align: right;
     }
     .case-study__section {
         flex-direction: row-reverse;
