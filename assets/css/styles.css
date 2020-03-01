@@ -474,7 +474,7 @@ label input:checked + .menu + .menu__content { opacity: 1; }
 .menu__content {
     z-index: 200;
     position: fixed;
-    top: 50%;
+    top: 60%;
     left: 50%;
     width: 100%;
     text-align: center;
@@ -482,13 +482,13 @@ label input:checked + .menu + .menu__content { opacity: 1; }
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     color: #FFF;
-    padding: 30px;
+    padding: 0 30px;
     visibility: hidden;
 }
 .menu__content ul {
     list-style: none;
     padding-left: 0;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
 }
 .menu__item {
     font-family: 'Product Sans Bold';
@@ -639,6 +639,9 @@ label input:checked + .menu + .menu__content { opacity: 1; }
         margin-bottom: 0;
     }
     /* Menu */
+    .menu__content {
+        top: 50%;
+    }
     .menu__item::before {
         content: "";
         position: absolute;
