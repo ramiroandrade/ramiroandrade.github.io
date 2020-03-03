@@ -1,5 +1,5 @@
 $(function() {
-  AOS.init();
+  //AOS.init();
   
   $(".menu").click(function(e) {
     $("body").toggleClass("menu-open");
