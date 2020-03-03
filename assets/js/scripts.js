@@ -2,7 +2,6 @@ $(function() {
   AOS.init();
   
   $(".menu").click(function(e) {
-    // $(".menu__content").toggleClass("hide");
     $("body").toggleClass("menu-open");
     
     if ($("body").hasClass("no-scroll")) {
