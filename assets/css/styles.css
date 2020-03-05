@@ -170,6 +170,9 @@ a {
     font-size: 3rem;
     line-height: 3.5rem;
 }
+#hero h1 span {
+    color: #FF6F00;
+}
 #hero p {
     font-size: 1.4rem;
     margin-top: 0;
@@ -510,8 +513,12 @@ body.no-scroll {
         align-items: center;
         justify-content: center;
     }*/
+    #hero h1 {
+        font-size: 4rem;
+        line-height: 4.5rem;
+    }
     .hero__wrapper {
-        max-width: 700px;
+        max-width: 860px;
     }
     /*#hero .button--link {
         color: #0055FF;
