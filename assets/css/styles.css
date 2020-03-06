@@ -541,10 +541,14 @@ body.no-scroll {
         justify-content: space-between;
         align-items: center;
     }
+    .project__title {
+        font-size: 2rem;
+    }
     .project__info {
         margin-bottom: 50px;
     }
     .project__img img {
+        max-width: 415px;
         height: auto;
         margin-top: 0;
     }
