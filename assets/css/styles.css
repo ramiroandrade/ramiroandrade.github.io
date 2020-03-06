@@ -208,7 +208,7 @@ a {
     padding: 80px 0;
 }
 #projects, #last-projects, #about {
-    background: url(../img/pattern.png), #FAFAFA;
+    background: url(../img/pattern.webp), #FAFAFA;
 }
 
 /* Snippet Projecto */
@@ -262,7 +262,7 @@ a {
 /* Footer */
 #contact {
     line-height: 1.85rem;
-    background: url('../img/footer-bgn.png') center no-repeat;
+    background: url('../img/footer-bgn.webp') center no-repeat;
     background-size: contain;
     background-position: bottom;
     padding: 80px 0;
