@@ -96,23 +96,16 @@ h3 {
     color: #0055FF;
     display: block;
 }
-.button--link:after {
-    content: "";
-    background: url(../img/icn-button-link.svg) center center no-repeat;
-    margin-left: .5rem;
-    width: .5rem;
-    height: .6rem;
-    display: inline-block;
-}
 .button--primary {
     text-transform: uppercase;
     font-size: .85rem;
     font-family: 'Product Sans Bold';
     text-decoration: none;
-    background: #0055FF;
+    background: #0055ff;
+    border: solid 2px #0055ff;
     color: #FFF;
-    padding: 15px 45px;
-    border-radius: 2px;
+    padding: 13px 65px 13px 55px;
+    border-radius: 30px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
     display: inline-block;
     text-align: center;
@@ -126,20 +119,41 @@ h3 {
     text-decoration: none;
     border: solid 2px #0055FF;
     color: #0055FF;
-    padding: 15px 45px;
-    border-radius: 2px;
+    padding: 13px 65px 13px 55px;
+    border-radius: 30px;
     display: inline-block;
     text-align: center;
-    max-width: 350px;
     transition: all .3s;
     -moz-transition: all 0.3s;
+}
+.button--primary:after {
+    content: "";
+    background: url(../img/icn-button-link.svg) center center no-repeat;
+    margin-left: .5rem;
+    width: .5rem;
+    height: .6rem;
+    margin-top: 0.25rem;
+    display: inline-block;
+    position: absolute;
+    transition: all .3s;
+}
+.button--secondary:after, .button--link:after {
+    content: "";
+    background: url(../img/icn-button-link-blue.svg) center center no-repeat;
+    margin-left: .5rem;
+    width: .5rem;
+    height: .6rem;
+    margin-top: 0.25rem;
+    display: inline-block;
+    position: absolute;
+    transition: all .3s;
 }
 a {
     color: #0055FF;
     font-weight: bold;
     text-decoration: none;
 }
-#hero a, #mini-about a, .menu__content a {
+#hero a {
     color: #FFF;
 }
 /* Animación Lava */
@@ -175,6 +189,7 @@ a {
 #hero h1 {
     font-size: 3rem;
     line-height: 3.5rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
 }
 #hero h1 span {
     color: #FFA040;
@@ -182,6 +197,7 @@ a {
 #hero p {
     font-size: 1.4rem;
     margin-top: 0;
+    font-family: 'Product Sans Light';
 }
 #hero .button--link {
     font-size: 1.2rem;
@@ -208,9 +224,8 @@ a {
     padding: 80px 0;
 }
 #projects, #last-projects, #about {
-    background: url(../img/pattern.webp), #FAFAFA;
+    background: #FAFAFA;
 }
-
 /* Snippet Projecto */
 .project {
     padding: 30px 25px 0 25px;
@@ -219,12 +234,19 @@ a {
     margin-bottom: 70px;
     display: flex;
     flex-direction: column;
+    overflow-y: hidden;
 }
 .project .button--primary {
     width: 100%;
 }
-.project__role {
+.project__role span {
     font-size: .85rem;
+    display: inline-block;
+    padding: 5px 15px;
+    border: solid 1px #ccc;
+    color: #999;
+    border-radius: 2px;
+    margin: 0 1rem 2.5rem 0;
 }
 .project__info {
     max-width: 450px;
@@ -235,16 +257,19 @@ a {
     margin-top: 0;
     margin-bottom: 0.85rem;
 }
+.project__description {
+    margin-bottom: 2rem;
+}
 .project__img img {
     margin-top: 30px;
+    box-shadow: 20px 40px 50px rgba(0, 0, 0, 0.15);
 }
 #projects .wrapper .project:first-child {
     margin-top: -150px;
 }
 /* Sección About de la home */
 #mini-about {
-    background: #0055FF;
-    color: #FFF;
+    background: #FFF;
 }
 #mini-about .wrapper {
     display: flex;
@@ -255,7 +280,7 @@ a {
     text-align: center;
 }
 #mini-about .wrapper img {
-    max-width: 220px;
+    max-width: 200px;
     height: auto;
     margin-bottom: 30px;
 }
@@ -314,25 +339,7 @@ a {
 #about p {
     line-height: 1.8rem;
 }
-.about__list.suffer li::before {
-    content: "";
-    background: url(../img/cross.svg) center center no-repeat;
-    margin-right: .5rem;
-    width: 1rem;
-    height: 1rem;
-    display: inline-block;
-    margin-top: .2rem;
-}
-.about__list.enjoy li::before {
-    content: "";
-    background: url(../img/check.svg) center center no-repeat;
-    margin-right: .5rem;
-    width: 1rem;
-    height: 1rem;
-    display: inline-block;
-    margin-top: .2rem;
-}
-.about__list.random li::before {
+.about__list li::before {
     content: "";
     background: url(../img/blue-dot.svg) center center no-repeat;
     margin-right: .5rem;
@@ -483,6 +490,11 @@ body.no-scroll {
     color: #FFF;
     padding: 0 30px;
     visibility: hidden;
+    pointer-events: none;
+}
+.menu__content a {
+    color: #FFF;
+    pointer-events: initial;
 }
 .menu__content ul {
     list-style: none;
@@ -502,17 +514,56 @@ body.no-scroll {
 .menu__content p {
     line-height: 2rem;
 }
-
-
-
-
-
-
-
-
-
-
-
+/* Boton de Scroll */
+.scroll-down {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    margin-left: -20px;
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: #002DCA;
+    background-size: 14px auto;
+    border-radius: 50%;
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 2s infinite;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+}
+.scroll-down:before {
+    position: absolute;
+    top: calc(50% - 8px);
+    left: calc(50% - 7px);
+    transform: rotate(-45deg);
+    display: block;
+    width: 12px;
+    height: 12px;
+    content: "";
+    border: 2px solid white;
+    border-width: 0px 0 2px 2px;
+}
+@keyframes bounce {
+0%,
+100%,
+20%,
+50%,
+80% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+}
+40% {
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
+}
+60% {
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+}
+}
 
 
 @media screen and (min-width: 768px) {
@@ -525,24 +576,27 @@ body.no-scroll {
     }
     /* Hero de la home */
     #hero h1 {
-        font-size: 3.5rem;
-        line-height: 4rem;
+        font-size: 3rem;
+        line-height: 3.5rem;
     }
     #hero p {
         font-size: 1.6rem;
     }
     .hero__wrapper {
-        max-width: 780px;
+        max-width: 680px;
     }
     /* Snippet Proyecto */
+    #last-projects .wrapper {
+        max-width: 1290px;
+    }
     .project {
         flex-direction: row;
-        padding: 50px 50px 0 50px;
+        padding: 50px 110px 0 110px;
         justify-content: space-between;
         align-items: center;
     }
     .project__title {
-        font-size: 2rem;
+        font-size: 2.4rem;
     }
     .project__info {
         margin-bottom: 50px;
@@ -658,7 +712,7 @@ body.no-scroll {
         left: 0;
         right: 100%;
         bottom: 0;
-        background: #FFF;
+        background: #FFA040;
         height: 4px;
         -webkit-transition-property: right;
         transition-property: right;
@@ -669,6 +723,14 @@ body.no-scroll {
     }
     .menu__item:hover:before, .menu__item:focus:before, .menu__item:active:before {
         right: 0;
+    }
+    /* Hover Botones */
+    .button--primary:hover:after, .button--secondary:hover:after, .button--link:hover:after {
+        margin-left: 1rem;
+    }
+    .button--secondary:hover:after, .button--link:hover:after {
+        background: url(../img/icn-button-link.svg) center center no-repeat;
+        margin-left: 1rem;
     }
     /* Hover Boton primario */
     .button--primary:hover {
@@ -681,3 +743,4 @@ body.no-scroll {
         background: #0055ff;
     }
 }
+
