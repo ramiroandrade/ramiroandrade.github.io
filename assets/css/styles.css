@@ -73,7 +73,7 @@ h3 {
     text-align: center;
 }
 .wrapper {
-    padding: 0 20px;
+    padding: 0 30px;
     max-width: 1060px;
     margin: 0 auto;
 }
@@ -126,6 +126,24 @@ h3 {
     transition: all .3s;
     -moz-transition: all 0.3s;
 }
+.button--contact {
+    font-size: 1.2rem;
+    font-family: 'Product Sans Bold';
+    text-decoration: none;
+    background: #0055ff;
+    color: #FFF;
+    padding: 13px 55px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    display: inline-block;
+    text-align: center;
+    transition: all .3s;
+    -moz-transition: all 0.3s;
+    margin-bottom: 1rem;
+}
+.button--contact span {
+    font-family: 'Product Sans Light';
+}
 .button--primary:after {
     content: "";
     background: url(../img/icn-button-link.svg) center center no-repeat;
@@ -147,6 +165,11 @@ h3 {
     display: inline-block;
     position: absolute;
     transition: all .3s;
+}
+.button--primary.center, .button--secondary.center {
+    margin: 0 auto;
+    display: block;
+    max-width: 340px;
 }
 a {
     color: #0055FF;
@@ -223,18 +246,24 @@ a {
 #last-projects, #projects, #mini-about {
     padding: 80px 0;
 }
-#projects, #last-projects, #about {
+#projects, #about, #mini-about {
     background: #FAFAFA;
+}
+#last-projects .wrapper {
+    padding: 0 20px;
 }
 /* Snippet Projecto */
 .project {
     padding: 30px 25px 0 25px;
-    background: #FFF;
-    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
+    background: #F0F2F5;
+    /*box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);*/
     margin-bottom: 70px;
     display: flex;
     flex-direction: column;
     overflow-y: hidden;
+}
+.project.dark {
+    color: #FFF;
 }
 .project .button--primary {
     width: 100%;
@@ -246,7 +275,7 @@ a {
     border: solid 1px #ccc;
     color: #999;
     border-radius: 2px;
-    margin: 0 1rem 2.5rem 0;
+    margin: 0 1rem 1.5rem 0;
 }
 .project__info {
     max-width: 430px;
@@ -255,61 +284,73 @@ a {
     font-family: 'Product Sans Bold';
     font-size: 1.75rem;
     margin-top: 0;
-    margin-bottom: 0.85rem;
-}
-.project__description {
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
+    line-height: 2.2rem;
 }
 .project__img img {
-    margin-top: 30px;
-    box-shadow: 20px 40px 50px rgba(0, 0, 0, 0.15);
-}
-.radius15 {
-    border-top-right-radius: 15%;
+    margin-top: 50px;
 }
 #projects .wrapper .project:first-child {
     margin-top: -150px;
 }
-/* Sección About de la home */
-#mini-about {
-    background: #FFF;
+.project .button--primary {
+    width: 100%;
 }
+/* Sección About de la home */
 #mini-about .wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 900px;
 }
 #mini-about .wrapper h2, #mini-about .wrapper .button--link  {
     text-align: center;
 }
 #mini-about .wrapper img  {
-    max-width: 200px;
+    max-width: 180px;
     height: auto;
     margin-bottom: 30px;
+}
+#mini-about a {
+    display: block;
+    max-width: 225px;
+    margin: 0 auto;
 }
 /* Footer */
 #contact {
     line-height: 1.85rem;
-    background: #002DCA;
-    padding: 80px 0;
+    background: #002195;
+    padding: 60px 0;
     color: #FFF;
-    border-bottom: 10px solid #002195;
+    text-align: center;
+}
+#contact h3 {
+    margin-bottom: 1rem;
 }
 #contact p {
     font-size: 1.25rem;
     line-height: 2.5rem;
+    margin-bottom: 2.5rem;
 }
-#contact a {
+#contact .wrapper p:last-child {
+    margin-bottom: 0;
+}
+#contact p a, .menu__content p a {
     color: #FFF;
     border-bottom: solid 2px #FFA040;
 }
+#contact .emoji {
+    display: none;
+}
 #credits {
+    border-top: solid 1px #002DCA;
     padding: 15px 30px;
-    background: #0028b5;
+    background: #002195;
 }
 #credits p {
     margin-bottom: 0;
     color: #FFF;
+    text-align: center;
     font-size: .85rem;
 }
 /* Formato About*/
@@ -542,12 +583,12 @@ body.no-scroll {
 }
 .scroll-down:before {
     position: absolute;
-    top: calc(50% - 9px);
-    left: calc(50% - 7px);
+    top: calc(50% - 8px);
+    left: calc(50% - 6px);
     transform: rotate(-45deg);
     display: block;
-    width: 12px;
-    height: 12px;
+    width: 10px;
+    height: 10px;
     content: "";
     border: 2px solid white;
     border-width: 0px 0 2px 2px;
@@ -603,6 +644,10 @@ body.no-scroll {
         padding: 65px 65px 0 65px;
         justify-content: space-between;
         align-items: center;
+        max-height: 500px;
+    }
+    .project__role span {
+        margin: 0 1rem 2.5rem 0;
     }
     .project__title {
         font-size: 2.2rem;
@@ -611,9 +656,12 @@ body.no-scroll {
         margin-bottom: 50px;
     }
     .project__img img {
-        max-width: 480px;
+        max-width: 550px;
         height: auto;
         margin-top: 0;
+    }
+    .project .button--primary {
+        width: auto;
     }
     .project .button--primary {
         width: auto;
@@ -627,10 +675,14 @@ body.no-scroll {
         flex-direction: row;
     }
     #mini-about .wrapper img {
-        margin: 0 80px 0 0;
+        margin: 0 4rem 0 0;
     }
     #mini-about .wrapper h2, #mini-about .wrapper .button--link  {
         text-align: left;
+    }
+    #mini-about a {
+        display: inline-block;
+        max-width: none;
     }
     /* Formato About y Proyectos */
     #subhero {
@@ -695,19 +747,17 @@ body.no-scroll {
         padding: 80px;
     }
     /* Contacto */
-    #contact {
-        text-align: center;
-    }
     #contact p {
+        font-size: 1rem;
         margin-bottom: .85rem;
         line-height: 1.8rem;
     }
-    #contact .wrapper div p:last-child {
-        margin-bottom: 0;
-    }
-    #contact a:hover {
+    #contact p a:hover {
         color: #FFA040;
         transition: all .3s;
+    }
+    #contact .emoji {
+        display: inline-block;
     }
     /* Menu */
     .menu__content {
@@ -733,22 +783,35 @@ body.no-scroll {
         right: 0;
     }
     /* Hover Botones */
-    .button--primary:hover:after, .button--secondary:hover:after, .button--link:hover:after {
+    .button--primary:hover {
+        box-shadow: none;
+        background: #002DCA;
+    }
+    .button--secondary:hover {
+        color: #FFF;
+        background: #0055ff;
+    }
+    .button--primary:hover:after {
         margin-left: 1rem;
     }
     .button--secondary:hover:after, .button--link:hover:after {
         background: url(../img/icn-button-link.svg) center center no-repeat;
         margin-left: 1rem;
     }
-    /* Hover Boton primario */
-    .button--primary:hover {
-        box-shadow: none;
+    .button--contact:hover {
         background: #002DCA;
-    }
-    /* Hover Boton secundario */
-    .button--secondary:hover {
-        color: #FFF;
-        background: #0055ff;
     }
 }
 
+@media screen and (min-width: 320px) and (max-width: 400px) {
+    #contact .wrapper {
+        padding: 0 10px;
+    }
+    #contact .button--contact {
+        font-size: 1rem;
+        padding: 16px 45px 10px 45px;
+    }
+    #contact p {
+        font-size: 1rem;
+    }
+}
