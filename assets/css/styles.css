@@ -524,6 +524,9 @@ a {
 body.no-scroll {
     overflow: hidden;
 }
+body.no-scroll main {
+    pointer-events: none;
+}
 .menu-open .menu__content {
     visibility: visible;
 }
