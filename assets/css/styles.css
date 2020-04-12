@@ -148,7 +148,7 @@ h3 {
 .button--primary.center, .button--secondary.center {
     margin: 0 auto;
     display: block;
-    max-width: 340px;
+    max-width: 350px;
 }
 a {
     color: #0055FF;
@@ -240,6 +240,7 @@ a {
     background: #F0F2F5;
     /*box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);*/
     margin-bottom: 70px;
+    border-radius: 6px;
     display: flex;
     flex-direction: column;
     overflow-y: hidden;
@@ -805,18 +806,20 @@ body.no-scroll main {
         flex-direction: row;
         margin-bottom: 5rem;
     }
-    .case-study__shots > img{
-        margin: 0 1% 1.5rem 1%;
-        width: 98%;
-    }
     .case-study__shots .grid {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
     }
     .case-study__shots .grid img {
-        width: 48%;
-        margin: 0 1% 1.5rem 1%;
+        width: 49%;
+        max-height: 430px;
+    }
+    .case-study__shots .grid img:nth-child(odd) {
+        margin: 0 1% 1.5rem 0;
+    }
+    .case-study__shots .grid img:nth-child(even) {
+        margin: 0 0 1.5rem 1%;
     }
     .case-study__results {
         text-align: center;
