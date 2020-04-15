@@ -260,9 +260,6 @@ a {
     border-radius: 2px;
     margin: 0 1rem 1.5rem 0;
 }
-.project__info {
-    max-width: 430px;
-}
 .project__title {
     font-family: 'Product Sans Bold';
     font-size: 1.75rem;
@@ -271,7 +268,8 @@ a {
     line-height: 2.2rem;
 }
 .project__img img {
-    margin-top: 50px;
+    margin: 50px auto 0 auto;
+    max-width: 400px;
 }
 #projects .wrapper .project:first-child {
     margin-top: -150px;
@@ -451,6 +449,9 @@ a {
     align-items: center;
     overflow-x: hidden;
 }
+.case-study__special ol {
+    max-width: 690px;
+}
 .case-study__special ol li {
     color: #0055FF;
     font-family: 'Product Sans Bold', sans-serif;
@@ -625,7 +626,7 @@ body.no-scroll main {
 .menu__content ul {
     list-style: none;
     padding-left: 0;
-    margin-bottom: 3rem;
+    margin-bottom: 2.5rem;
 }
 .menu__item {
     font-family: 'Product Sans Bold';
@@ -691,6 +692,28 @@ body.no-scroll main {
 }
 }
 
+@media screen and (min-width: 320px) and (max-width: 370px) {
+    #contact .wrapper {
+        padding: 0 10px;
+    }
+    #contact .button--contact {
+        font-size: 1rem;
+        padding: 16px 45px 10px 45px;
+    }
+    #contact p {
+        font-size: 1rem;
+    }
+    .menu__content {
+        top: 55%;
+    }
+    .menu__content ul {
+        margin-bottom: 1rem;
+    }
+    .menu__item {
+        font-size: 2.6rem;
+        margin-bottom: 1.5rem;
+    }
+}
 
 @media screen and (min-width: 768px) {
     /* Títulos */
@@ -717,18 +740,13 @@ body.no-scroll main {
     }
     .project {
         flex-direction: row;
-        padding: 65px 65px 0 65px;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-end;
         max-height: 500px;
-    }
-    .project__role span {
-        margin: 0 1rem 2.5rem 0;
-    }
-    .project__title {
-        font-size: 2.2rem;
+        padding: 50px 0 0 50px;
     }
     .project__info {
+        max-width: 430px;
         margin-bottom: 50px;
     }
     .project__img img {
@@ -805,7 +823,6 @@ body.no-scroll main {
         margin: 0 auto 8rem auto;
     }
     .case-study__special {
-        flex-direction: row;
         margin-bottom: 5rem;
     }
     .case-study__shots .grid {
@@ -907,19 +924,24 @@ body.no-scroll main {
         background: #002DCA;
     }
 }
-
-@media screen and (min-width: 320px) and (max-width: 400px) {
-    #contact .wrapper {
-        padding: 0 10px;
+@media screen and (min-width: 1000px) {
+    .project {
+        padding: 65px 65px 0 65px;
+        align-items: center;
     }
-    #contact .button--contact {
-        font-size: 1rem;
-        padding: 16px 45px 10px 45px;
+    .project__title {
+        font-size: 2.2rem;
     }
-    #contact p {
-        font-size: 1rem;
+    .project__role span {
+        margin: 0 1rem 2.5rem 0;
+    }
+    .case-study__special {
+        flex-direction: row;
     }
 }
+
+
+
 
 /* Utilities */
 .text-center {
