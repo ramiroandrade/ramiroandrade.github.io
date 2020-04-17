@@ -442,8 +442,6 @@ a {
     margin-bottom: .5rem;
 }
 .case-study__section {
-    display: flex;
-    flex-direction: column;
     margin-bottom: 5rem;
 }
 .case-study__special {
@@ -820,8 +818,6 @@ body.no-scroll main {
         text-align: right;
     }
     .case-study__section {
-        justify-content: center;
-        align-items: center;
         max-width: 690px;
         margin: 0 auto 8rem auto;
     }
