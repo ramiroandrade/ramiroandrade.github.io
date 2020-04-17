@@ -228,7 +228,7 @@ a {
 #projects, #about, #mini-about {
     background: #FAFAFA;
 }
-#last-projects .wrapper {
+#last-projects .wrapper, #projects .wrapper  {
     padding: 0 20px;
 }
 #last-projects h2.especial {
@@ -291,6 +291,9 @@ a {
     max-width: 180px;
     height: auto;
     margin-bottom: 30px;
+}
+#mini-about p {
+    max-width: 600px;
 }
 #mini-about a {
     display: block;
