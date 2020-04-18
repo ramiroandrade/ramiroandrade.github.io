@@ -496,34 +496,43 @@ a {
     text-align: center;
 }
 .case-study__navigator {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.case-study__navigator .button {
-    background-color: #002195;
+    background-color: #0055FF;
     color: #FFF;
-    border-radius: 6px;
-    display: block;
+    border-radius: 55px;
     width: 100%;
+    max-width: 400px;
+    position: relative;
+    padding: 20px 0 15px 40px;
+    display: block;
+    transition: all .3s;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
 }
-.case-study__navigator .previous span, .case-study__navigator .next span {
+.case-study__navigator:after {
+    content: "";
+    background: url(../img/icn-button-link.svg) center center no-repeat;
+    width: 0.5rem;
+    height: .6rem;
+    margin-top: 0.25rem;
+    display: block;
+    position: absolute;
+    right: 12%;
+    bottom: 34px;
+}
+.case-study__navigator img {
+    max-width: 140px;
+    display: none;
+}
+.case-study__navigator span {
     display: block;
     text-transform: uppercase;
-    font-size: .85rem;
+    font-size: .65rem;
     font-weight: normal;
     margin-bottom: .3rem;
 }
-.case-study__navigator .previous p, .case-study__navigator .next p {
-    font-size: 1.5rem;
+.case-study__navigator p {
+    font-size: 1.2rem;
     font-family: 'Product Sans Bold';
-}
-.case-study__navigator .previous {
-    text-align: right;
-    padding: 30px 60px 0 0;
-}
-.case-study__navigator .next {
-    padding: 30px 0 0 60px;
+    margin-bottom: 0;
 }
 /* Menú */
 body.no-scroll {
@@ -844,12 +853,38 @@ body.no-scroll main {
         padding: 50px 100px;
     }
     .case-study__navigator {
-        flex-direction: row;
+        padding: 15px 0 0 40px;
+        display: flex;
         align-items: center;
-        justify-content: space-between;
+        max-width: 60%;
+        margin: 0 auto;
     }
-    .case-study__navigator .button {
-        width: 48%;
+    .case-study__navigator:after {
+        content: "";
+        background: url(../img/icn-button-link.svg) center center no-repeat;
+        width: 0.5rem;
+        height: .6rem;
+        display: block;
+        position: absolute;
+        transition: all .3s;
+        right: 10%;
+        bottom: 40px;
+    }
+    .case-study__navigator img {
+        max-width: 120px;
+        display: inline-block;
+    }
+    .case-study__navigator span {
+        display: block;
+        text-transform: uppercase;
+        font-size: .85rem;
+        font-weight: normal;
+        margin-bottom: .3rem;
+    }
+    .case-study__navigator p {
+        font-size: 1.5rem;
+        font-family: 'Product Sans Bold';
+        margin-bottom: 10px;
     }
     /* Formato About */
     .about__page {
@@ -903,6 +938,21 @@ body.no-scroll main {
         color: #FFA040;
         transition: all .3s;
     }
+}
+@media screen and (min-width: 1000px) {
+    .project {
+        padding: 65px 65px 0 65px;
+        align-items: center;
+    }
+    .project__title {
+        font-size: 2.2rem;
+    }
+    .project__role span {
+        margin: 0 1rem 2.5rem 0;
+    }
+    .case-study__special {
+        flex-direction: row;
+    }
     /* Hover Botones */
     .button--primary:hover {
         box-shadow: none;
@@ -922,20 +972,12 @@ body.no-scroll main {
     .button--contact:hover {
         background: #002DCA;
     }
-}
-@media screen and (min-width: 1000px) {
-    .project {
-        padding: 65px 65px 0 65px;
-        align-items: center;
+    .case-study__navigator:hover:after {
+        right: 8%;
     }
-    .project__title {
-        font-size: 2.2rem;
-    }
-    .project__role span {
-        margin: 0 1rem 2.5rem 0;
-    }
-    .case-study__special {
-        flex-direction: row;
+    .case-study__navigator:hover {
+        background-color: #002DCA;
+        box-shadow: none;
     }
 }
 
