@@ -148,7 +148,7 @@ h3 {
 .button--primary.center, .button--secondary.center {
     margin: 0 auto;
     display: block;
-    max-width: 350px;
+    max-width: 300px;
 }
 a {
     color: #0055FF;
@@ -519,7 +519,7 @@ a {
     bottom: 34px;
 }
 .case-study__navigator img {
-    max-width: 140px;
+    max-width: 120px;
     display: none;
 }
 .case-study__navigator span {
@@ -871,8 +871,7 @@ body.no-scroll main {
         bottom: 40px;
     }
     .case-study__navigator img {
-        max-width: 120px;
-        display: inline-block;
+        display: block;
     }
     .case-study__navigator span {
         display: block;
