@@ -433,7 +433,7 @@ a {
 }
 .case-study__info .wrapper p {
     margin-bottom: 0;
-    max-width: 800px;
+    max-width: 600px;
 }
 #case-study .wrapper {
     padding: 30px;
@@ -817,7 +817,6 @@ body.no-scroll main {
     }
     .case-study__info .wrapper {
         flex-direction: row;
-        justify-content: space-between;
         align-items: center;
         max-width: 850px;
     }
