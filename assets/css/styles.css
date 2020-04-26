@@ -125,7 +125,7 @@ h3 {
 }
 .button--primary:after {
     content: "";
-    background: url(../img/icn-button-link.svg) center center no-repeat;
+    background: url('../img/icn-button-link.svg') center center no-repeat;
     margin-left: .5rem;
     width: .5rem;
     height: .6rem;
@@ -136,7 +136,7 @@ h3 {
 }
 .button--secondary:after, .button--link:after {
     content: "";
-    background: url(../img/icn-button-link-blue.svg) center center no-repeat;
+    background: url('../img/icn-button-link-blue.svg') center center no-repeat;
     margin-left: .5rem;
     width: .5rem;
     height: .6rem;
@@ -225,9 +225,6 @@ a {
 #last-projects, #projects, #mini-about {
     padding: 80px 0;
 }
-#projects, #about, #mini-about {
-    background: #FAFAFA;
-}
 #last-projects .wrapper, #projects .wrapper  {
     padding: 0 20px;
 }
@@ -278,6 +275,9 @@ a {
     width: 100%;
 }
 /* Sección About de la home */
+#mini-about {
+    background: #FAFAFA;
+}
 #mini-about .wrapper {
     display: flex;
     flex-direction: column;
@@ -371,7 +371,7 @@ a {
 }
 .about__list li::before {
     content: "";
-    background: url(../img/blue-dot.svg) center center no-repeat;
+    background: url('../img/blue-dot.svg') center center no-repeat;
     margin-right: .5rem;
     width: 1rem;
     height: 1rem;
@@ -444,7 +444,7 @@ a {
 .case-study__section {
     margin-bottom: 5rem;
 }
-.case-study__special {
+.case-study__special, .case-study__special > div {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -509,7 +509,7 @@ a {
 }
 .case-study__navigator:after {
     content: "";
-    background: url(../img/icn-button-link.svg) center center no-repeat;
+    background: url('../img/icn-button-link.svg') center center no-repeat;
     width: 0.5rem;
     height: .6rem;
     margin-top: 0.25rem;
@@ -650,6 +650,41 @@ body.no-scroll main {
 }
 .menu__content p {
     line-height: 2rem;
+}
+/* Language selector */
+#language {
+    position: absolute;
+    right: 20px;
+    top: 35px;
+    display: flex;
+    font-family: 'Product Sans Bold', sans-serif;
+    margin: 0;
+    z-index: 50;
+}
+#language a {
+    color: #FFF;
+    margin-right: .5rem;
+    height: 40px;
+    width: 40px;
+    padding: 9px;
+    display: block;
+    text-align: center;
+    border: solid 2px;
+    border-radius: 50%;
+    border: solid 2px rgba(0, 0, 0, 0);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+#language a.selected {
+    border: solid 2px #fff;
+    border-radius: 50%;
+    pointer-events: none;
+}
+#language.dark a {
+    color: #0055FF;
+}
+#language.dark a.selected {
+    border: solid 2px #0055FF;
 }
 /* Boton de Scroll */
 .scroll-down {
@@ -824,6 +859,7 @@ body.no-scroll main {
         margin: 0 2rem 0 0;
         width: 140px;
         text-align: right;
+        font-size: 1.7rem;
     }
     .case-study__section {
         max-width: 690px;
@@ -860,7 +896,7 @@ body.no-scroll main {
     }
     .case-study__navigator:after {
         content: "";
-        background: url(../img/icn-button-link.svg) center center no-repeat;
+        background: url('../img/icn-button-link.svg') center center no-repeat;
         width: 0.5rem;
         height: .6rem;
         display: block;
@@ -948,8 +984,14 @@ body.no-scroll main {
     .project__role span {
         margin: 0 1rem 2.5rem 0;
     }
-    .case-study__special {
+    #hero-case-study h1 {
+        font-size: 2.5rem;
+    }
+    .case-study__special, .case-study__special > div {
         flex-direction: row;
+    }
+    #language {
+        right: 30px;
     }
     /* Hover Botones */
     .button--primary:hover {
@@ -964,7 +1006,7 @@ body.no-scroll main {
         margin-left: 1rem;
     }
     .button--secondary:hover:after, .button--link:hover:after {
-        background: url(../img/icn-button-link.svg) center center no-repeat;
+        background: url('../img/icn-button-link.svg') center center no-repeat;
         margin-left: 1rem;
     }
     .button--contact:hover {
@@ -977,10 +1019,15 @@ body.no-scroll main {
         background-color: #002DCA;
         box-shadow: none;
     }
+    #language a:hover {
+        background: #FFF;
+        color: #0055FF;
+    }
+    #language.dark a:hover {
+        background: #0055FF;
+        color: #FFF;
+    }
 }
-
-
-
 
 /* Utilities */
 .text-center {
