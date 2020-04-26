@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Personal income tax declaration - Ramiro Andrade UX / UI Designer</title>
+    <meta name="description" content="I design digital experiences with focus on usability and accessibility. I addition to my design skills, I have front-end knowledge and a background in marketing.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../../../assets/css/styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../../assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="../../../assets/img//favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="../../../assets/img/favicon-16x16.png" sizes="16x16">
+    <meta name="theme-color" content="#0055FF" />
+</head>
+
+<body>
+    <main>
+        <section id="hero-case-study">
+            <div class="wrapper">
+                <div>
+                    <div class="project__role">
+                        <span>UX / UI Design</span>
+                    </div>
+                    <h1>Personal income tax declaration</h1>
+                    <p class="destacado">A simple and intuitive way to file your taxes</p>
+                    <a href="" class="scroll-down"></a>
+                    <img src="../../../assets/img/img-irpf.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section id="case-study" class="scroll-point">
+            <div class="case-study__info">
+                <div class="wrapper">
+                    <h2>Client</h2>
+                    <p>DGI, the government agency dedicated to tax control in Uruguay, needed a solution that allowed taxpayers to make their own income tax declaration.</p>
+                </div>
+            </div>
+            <div class="case-study__info u-mb3">
+                <div class="wrapper">
+                    <h2>Challenge</h2>
+                    <p>Due to the heterogeneity of the taxpayers, the proposal had to be accessible (AA minimun level), with focus on usablitiy and be very intuitive.</p>
+                </div>
+            </div>
+            <div class="wrapper">
+                <h2 class="text-center especial">Proposal</h2>
+                <p class="text-center destacado u-mb3">The final design focused on a summary screen that presented the final amount to pay or collect, along with with the detail that led to that amount.</p>
+                <img src="../../../assets/img/dgi/propuesta.png" alt="" class="u-mb5">
+
+                <div class="case-study__section aos-init aos-animate u-mb3" data-aos="fade-up" data-aos-duration="6000">
+                    <h3 class="text-center">Cards</h3>
+                    <p>The summary screen design was solved with a set of cards, which show the breakdown of the final amount to be collected / paid, indicating the item, the quantity and the company to which they correspond.</p>
+                    <p>Through these cards you have access to the forms, in which you can edit the data already loaded by the DGI or complete missing information.</p>
+                </div>
+                <div class="case-study__special">
+                    <img src="../../../assets/img/dgi/cards.png" alt="" class="aos-init aos-animate" data-aos="fade-right" data-aos-duration="6000">
+                    <ol class="aos-init aos-animate" data-aos="fade-left" data-aos-duration="6000">
+                        <li><span>The first card is the result card, in charge of indicating the final balance to pay or collect.</span></li>
+                        <li><span>The other cards show the breakdown of that balance. In this case, the card shows that the user has two dependent incomes, one from the company Edipler SA and the other from the University of the Republic.</span></li>
+                        <li><span>The "View and edit" button is the one that provides access to the form for each item. All the data that is edited within that form will have an impact on the amount shown on the card.</span></li>
+                        <li><span>The items that present differences are shown with background colored cards accompanied by attention or error messages. These messages are located under the cards, indicating the adjustments to be made in order to send the statement.</span></li>
+                    </ol>
+                </div>
+            </div>
+
+            <h3 class="text-center">Forms</h3>
+            <img src="../../../assets/img/dgi/formularios.png" alt="" class="u-mb2">
+
+            <div class="wrapper">
+                <div class="case-study__section aos-init aos-animate" data-aos="fade-up" data-aos-duration="6000">
+                    <h3>Fields</h3>
+                    <p class="u-mb2">Each item has its peculiarities, so each form is different. Many of the fields depende on manual entry, while others depend on the combination of 2 or more fields, so we decided to make them automatic and to look like the result of a tally.</p>
+                    <img src="../../../assets/img/dgi/campos.png" alt="">
+                </div>
+                <div class="case-study__section aos-init aos-animate" data-aos="fade-up" data-aos-duration="6000">
+                    <h3>Navigation</h3>
+                    <p>Once inside a form, there are two ways to navigate between them:</p>
+                    <p class="u-mb2">Following a linear flow using the button "Confirm and go to [next form name]"</p>
+                    <img src="../../../assets/img/dgi/navegacion-1.png" alt="" class="u-mb2">
+                    <p class="u-mb2">Navigate to any of the other forms through tabs</p>
+                    <img src="../../../assets/img/dgi/navegacion-2.png" alt="" class="u-mb2">
+                    <p>It was important that the user had an overview of everything, since some changes in one form affected data in another. That's why we decided to provide two options to give more control to the user.</p>
+                </div>
+                <div class="case-study__section aos-init aos-animate" data-aos="fade-up" data-aos-duration="6000">
+                    <h3>Actions</h3>
+                    <p>Each number entered corresponds to real money, so completing these fields is a stressful process. Also, this has the character of an affidavit, which differentiates it even more from a simple form. We took this into account from the beginning and that is why we include several actions to facilitate completion:</p>
+                    <p class="u-mb2">It is possible to confirm the changes and return to the summary screen (cards) or confirm and follow the flow of forms. You can also save your progress, at any moment, to continue the process on another time.</p>
+                    <img src="../../../assets/img/dgi/acciones-1.png" alt="" class="u-mb2">
+                    <p class="u-mb2">If you made modifications but made mistakes, there is the possibility of restoring the original data entered by DGI.</p>
+                    <img src="../../../assets/img/dgi/acciones-2.png" alt="" class="u-mb2">
+                </div>
+
+                <div class="case-study__shots">
+                    <h3 class="text-center u-mb2">Shots</h3>
+                    <img src="../../../assets/img/dgi/shot-1.png" alt="">
+                    <div class="grid">
+                        <img src="../../../assets/img/dgi/shot-2.png" alt="" class="aos-init aos-animate" data-aos="fade-right" data-aos-duration="6000">
+                        <img src="../../../assets/img/dgi/shot-3.png" alt="" class="aos-init aos-animate" data-aos="fade-left" data-aos-duration="6000">
+                        <img src="../../../assets/img/dgi/shot-4.png" alt="" class="aos-init aos-animate" data-aos="fade-right" data-aos-duration="6000">
+                        <img src="../../../assets/img/dgi/shot-5.png" alt="" class="aos-init aos-animate" data-aos="fade-left" data-aos-duration="6000">
+                    </div>
+                </div>
+
+                <div class="case-study__results">
+                    <span class="emblem aos-init aos-animate" data-aos="zoom-in-up" data-aos-duration="6000">&#128077;</span>
+                    <p class="destacado u-mb0">In its first year of existence, 75% of the declarations were made through the site and calls and in-person queries were considerably reduced.</p>
+                </div>
+                <a href="../siicex/index.html" class="case-study__navigator">
+                    <picture>
+                        <source srcset="../../../assets/img/img-siicex.webp" type="image/webp">
+                        <img src="../../../assets/img/img-siicex.png" alt="">
+                    </picture>
+                    <div>
+                        <span>Next project</span>
+                        <p>SIICEX Agenda</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div id="contact">
+            <div class="wrapper">
+                <h3>In case you wanna say hi.</h3>
+                <a class="button--contact" href="mailto:hola@ramiroandrade.com"><span class="emoji">&#128232;</span>hola@ramiroandrade.com </a>
+                <p>You can also find me on <a href="https://www.linkedin.com/in/ramiroandradeguenzatti/">Linkedin</a> and <a href="https://dribbble.com/ramiroandrade">Dribbble</a>.</p>
+            </div>
+        </div>
+        <div id="credits">
+            <p>Created in quarantine - © 2020 Ramiro Andrade</p>
+        </div>
+    </footer>
+
+    <div class="menu__wrapper">
+        <span class='menu'> 
+            <span class='hamburger'></span>
+        </span>
+        <div class="menu__content">
+            <ul>
+                <li> <a href='../../index.html' class="menu__item">Home</a> </li>
+                <li> <a href='../../about/index.html' class="menu__item">About me</a> </li>
+                <li> <a href='../index.html' class="menu__item">Projects</a> </li>
+            </ul>
+            <p>You can write me at <a href="mailto:hola@ramiroandrade.com">hola@ramiroandrade.com</a> or find me on <a href="https://www.linkedin.com/in/ramiroandradeguenzatti/">Linkedin</a> and <a href="https://dribbble.com/ramiroandrade">Dribbble</a>.</p>
+        </div>
+    </div>
+
+    <ul id="language">
+        <li><a href="../../../proyectos/dgi/index.html">es</a></li>
+        <li><a href="#" class="selected">en</a></li>
+    </ul>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="../../../assets/js/scripts.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
