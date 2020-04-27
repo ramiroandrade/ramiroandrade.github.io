@@ -118,7 +118,7 @@ h3 {
     text-align: center;
     transition: all .3s;
     -moz-transition: all 0.3s;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 .button--contact span {
     font-family: 'Product Sans Light';
@@ -304,7 +304,7 @@ a {
 #contact {
     line-height: 1.85rem;
     background: #002195;
-    padding: 60px 0;
+    padding: 100px 0 80px 0;
     color: #FFF;
     text-align: center;
 }
@@ -349,11 +349,11 @@ a {
     max-width: 120px;
     margin: 0 auto 2rem auto;
 }
+#about p a {
+    font-weight: normal;
+}
 #about h2 {
     margin: 0 0 .85rem 0;
-}
-#about p {
-    line-height: 1.8rem;
 }
 .emoji {
     margin-right: .85rem;
@@ -666,7 +666,7 @@ body.no-scroll main {
     margin-right: .5rem;
     height: 40px;
     width: 40px;
-    padding: 9px;
+    padding: 8px 9px;
     display: block;
     text-align: center;
     border: solid 2px;
@@ -863,7 +863,7 @@ body.no-scroll main {
     }
     .case-study__section {
         max-width: 690px;
-        margin: 0 auto 8rem auto;
+        margin: 0 auto 5rem auto;
     }
     .case-study__special {
         margin-bottom: 5rem;
@@ -989,6 +989,10 @@ body.no-scroll main {
     }
     .case-study__special, .case-study__special > div {
         flex-direction: row;
+    }
+    .case-study__section p, .case-study__special ol li span, #about p {
+        font-size: 18px;
+        line-height: 2rem;
     }
     #language {
         right: 30px;
