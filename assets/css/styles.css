@@ -666,7 +666,7 @@ body.no-scroll main {
     margin-right: .5rem;
     height: 40px;
     width: 40px;
-    padding: 8px 9px;
+    padding: 10px 9px;
     display: block;
     text-align: center;
     border: solid 2px;
@@ -757,6 +757,17 @@ body.no-scroll main {
     .menu__item {
         font-size: 2.6rem;
         margin-bottom: 1.5rem;
+    }
+    #hero h1 {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+    #hero p {
+        font-size: 1.2rem;
+    }
+    .project__role span {
+        font-size: .65rem;
+        margin: 0 .5rem 1.5rem 0;
     }
 }
 
@@ -944,6 +955,10 @@ body.no-scroll main {
     }
     #contact .emoji {
         display: inline-block;
+    }
+    /* language selector */
+    #language a {
+        padding: 8px 9px;
     }
     /* Menu */
     .menu__content {
