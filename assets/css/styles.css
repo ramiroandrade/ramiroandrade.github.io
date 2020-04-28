@@ -1076,3 +1076,22 @@ body.no-scroll main {
 .hide {
     display: none;
 }
+
+
+[data-aos="fade-in"] {
+    opacity: 0;
+    transform: translate3d(0, -10px, 0);
+}
+
+[data-aos="fade-in"].aos-animate {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+
+[data-aos="fade-scroll"] {
+    opacity: 0;
+}
+
+[data-aos="fade-scroll"].aos-animate {
+    opacity: 1;
+}
