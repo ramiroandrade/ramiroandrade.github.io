@@ -464,13 +464,14 @@ a {
 .case-study__special img {
     max-width: 580px;
 }
-.case-study__shots img{
+.case-study__shots .grid picture{
     margin-bottom: 1.5rem;
 }
 .case-study__shots .grid {
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
+    margin-top: 1.5rem;
 }
 .case-study__results {
     background: #002DCA;
@@ -885,14 +886,14 @@ body.no-scroll main {
         flex-direction: row;
         flex-wrap: wrap;
     }
-    .case-study__shots .grid img {
+    .case-study__shots .grid picture {
         width: 49%;
-        max-height: 430px;
+        
     }
-    .case-study__shots .grid img:nth-child(odd) {
+    .case-study__shots .grid picture:nth-child(odd) {
         margin: 0 1% 1.5rem 0;
     }
-    .case-study__shots .grid img:nth-child(even) {
+    .case-study__shots .grid picture:nth-child(even) {
         margin: 0 0 1.5rem 1%;
     }
     .case-study__results {
