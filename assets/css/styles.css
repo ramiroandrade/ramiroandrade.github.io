@@ -271,9 +271,6 @@ a {
 #projects .wrapper .project:first-child {
     margin-top: -150px;
 }
-.project .button--primary {
-    width: 100%;
-}
 /* Sección About de la home */
 #mini-about {
     background: #FAFAFA;
@@ -785,6 +782,7 @@ body.no-scroll main {
     #hero h1 {
         font-size: 3rem;
         line-height: 3.5rem;
+        margin-bottom: 0;
     }
     #hero p {
         font-size: 1.6rem;
@@ -811,9 +809,6 @@ body.no-scroll main {
         max-width: 550px;
         height: auto;
         margin-top: 0;
-    }
-    .project .button--primary {
-        width: auto;
     }
     .project .button--primary {
         width: auto;
