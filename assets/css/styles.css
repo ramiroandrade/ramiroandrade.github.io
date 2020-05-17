@@ -160,11 +160,6 @@ h3 {
     -o-transition: all .3s;
     transition: all .3s;
 }
-.button--primary.center, .button--secondary.center {
-    margin: 0 auto;
-    display: block;
-    max-width: 300px;
-}
 a {
     color: #0055FF;
     font-weight: bold;
