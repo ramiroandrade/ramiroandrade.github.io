@@ -356,7 +356,7 @@ a {
 }
 #contact p a, .menu__content p a {
     color: #FFF;
-    border-bottom: solid 2px #FFA040;
+    /*border-bottom: solid 2px #FFA040;*/
 }
 #contact .emoji {
     display: none;
@@ -1082,12 +1082,6 @@ body.no-scroll main {
         margin-bottom: .85rem;
         line-height: 1.8rem;
     }
-    #contact p a:hover {
-        color: #FFA040;
-        -webkit-transition: all .3s;
-        -o-transition: all .3s;
-        transition: all .3s;
-    }
     #contact .emoji {
         display: inline-block;
     }
@@ -1098,34 +1092,6 @@ body.no-scroll main {
     /* Menu */
     .menu__content {
         top: 50%;
-    }
-    .menu__item::before {
-        content: "";
-        position: absolute;
-        z-index: -1;
-        left: 0;
-        right: 100%;
-        bottom: 0;
-        background: #FFA040;
-        height: 4px;
-        -webkit-transition-property: right;
-        -o-transition-property: right;
-        transition-property: right;
-        -webkit-transition-duration: 0.3s;
-        -o-transition-duration: 0.3s;
-           transition-duration: 0.3s;
-        -webkit-transition-timing-function: ease-out;
-        -o-transition-timing-function: ease-out;
-           transition-timing-function: ease-out;
-    }
-    .menu__item:hover:before, .menu__item:focus:before, .menu__item:active:before {
-        right: 0;
-    }
-    .menu__content p a:hover {
-        color: #FFA040;
-        -webkit-transition: all .3s;
-        -o-transition: all .3s;
-        transition: all .3s;
     }
 }
 @media screen and (min-width: 1000px) {
@@ -1192,6 +1158,35 @@ body.no-scroll main {
     #language.dark a:hover {
         background: #0055FF;
         color: #FFF;
+    }
+    #contact p a, .menu__content p a {
+        border-bottom: none;
+        display: inline-block;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+        position: relative;
+    }
+    .menu__item::before, #contact p a::before, .menu__content p a::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        right: 100%;
+        bottom: 0;
+        background: #FFA040;
+        height: 4px;
+        -webkit-transition-property: right;
+        -o-transition-property: right;
+        transition-property: right;
+        -webkit-transition-duration: 0.3s;
+        -o-transition-duration: 0.3s;
+           transition-duration: 0.3s;
+        -webkit-transition-timing-function: ease-out;
+        -o-transition-timing-function: ease-out;
+           transition-timing-function: ease-out;
+    }
+    .menu__item:hover:before, .menu__item:focus:before, .menu__item:active:before, #contact p a:hover:before, #contact p a:focus:before, #contact p a:active:before, .menu__content p a:hover:before, .menu__content p a:focus:before, .menu__content p a:active:before {
+        right: 0;
     }
 }
 
