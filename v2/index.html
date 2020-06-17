@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="no-js">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -17,59 +17,18 @@
     <meta name="theme-color" content="#0055FF" />
 </head>
 
-<body>
-    <nav id="cd-vertical-nav">
-        <ul>
-            <li>
-                <a href="#hero" data-number="1">
-                    <span class="cd-dot"></span>
-                    <span class="cd-label">Intro</span>
-                </a>
-            </li>
-            <li>
-                <a href="#first-project" data-number="2">
-                    <span class="cd-dot"></span>
-                    <span class="cd-label">DGI</span>
-                </a>
-            </li>
-            <li>
-                <a href="#second-project" data-number="3">
-                    <span class="cd-dot"></span>
-                    <span class="cd-label">SIICEX</span>
-                </a>
-            </li>
-            <li>
-                <a href="#third-project" data-number="4">
-                    <span class="cd-dot"></span>
-                    <span class="cd-label">Devoto</span>
-                </a>
-            </li>
-            <li>
-                <a href="#mini-about" data-number="5">
-                    <span class="cd-dot"></span>
-                    <span class="cd-label">About</span>
-                </a>
-            </li>
-            <li>
-                <a href="#contact" data-number="6">
-                    <span class="cd-dot"></span>
-                    <span class="cd-label">Contact</span>
-                </a>
-            </li>
-        </ul>
-    </nav>
-
-    <section id="hero" class="cd-section">
+<body class="home">
+<div class="main">
+    <section id="hero" class="home-section">
         <div class="hero__wrapper">
             <p data-aos="fade-in" data-aos-duration="1500"><span class="emoji">&#128075;</span>Hey! I'm Ramiro Andrade</p>
             <h1 data-aos="fade-in" data-aos-delay="500" data-aos-duration="1500">I design digital experiences with focus on <span>usability</span> and <span>accessibility</span></h1>
             <span data-aos="fade-scroll" data-aos-delay="1500" data-aos-offset="-500" data-aos-duration="500" class="scroll-down"></span>
         </div>
-        <canvas id="lamp-anim" class="lamp-anim"></canvas>
     </section>
-    <!-- cd-section -->
+    <!-- home-section -->
 
-    <section id="first-project" class="cd-section scroll-point">
+    <section id="first-project" class="home-section scroll-point">
         <div class="wrapper">
             <div class="project__info">
                 <div class="project__role">
@@ -77,7 +36,7 @@
                 </div>
                 <p class="project__title">The simplest way to do your taxes</p>
                 <p class="project__description">The government agency dedicated to tax control needed a solution that allowed taxpayers to make their own income tax declaration.</p>
-                <a href="proyectos/dgi" class="button--secondary">See project</a>
+                <a href="projects/dgi" class="button--secondary">See project</a>
             </div>
             <div class="project__img">
                 <picture>
@@ -87,9 +46,9 @@
             </div>
         </div>
     </section>
-    <!-- cd-section -->
+    <!-- home-section -->
 
-    <section id="second-project" class="cd-section blue">
+    <section id="second-project" class="home-section blue">
         <div class="wrapper">
             <div class="project__info">
                 <div class="project__role">
@@ -97,7 +56,7 @@
                 </div>
                 <p class="project__title">An events agenda to promote networking</p>
                 <p class="project__description">The Uruguayan foreign trade portal was looking for an event agenda app that would promote networking.</p>
-                <a href="proyectos/siicex" class="button--secondary">See project</a>
+                <a href="projects/siicex" class="button--secondary">See project</a>
             </div>
             <div class="project__img">
                 <picture>
@@ -107,9 +66,9 @@
             </div>
         </div>
     </section>
-    <!-- cd-section -->
+    <!-- home-section -->
 
-    <section id="third-project" class="cd-section">
+    <section id="third-project" class="home-section">
         <div class="wrapper">
             <div class="project__info">
                 <div class="project__role">
@@ -118,7 +77,7 @@
                 </div>
                 <p class="project__title">A new mobile shopping experience</p>
                 <p class="project__description">Devoto, one of the largest supermarket chains in Uruguay, was looking for a redesign of his e-commerce site.</p>
-                <a href="proyectos/devoto" class="button--secondary">See project</a>
+                <a href="projects/devoto" class="button--secondary">See project</a>
             </div>
             <div class="project__img top">
                 <picture>
@@ -128,9 +87,9 @@
             </div>
         </div>
     </section>
-    <!-- cd-section -->
+    <!-- home-section -->
 
-    <section id="mini-about" class="cd-section">
+    <section id="mini-about" class="home-section">
         <div class="wrapper">
             <picture>
 				<source srcset="assets/img/ramiro-andrade.webp" type="image/webp">
@@ -143,9 +102,9 @@
             </div>
         </div>
     </section>
-    <!-- cd-section -->
+    <!-- home-section -->
 
-    <section id="contact" class="cd-section">
+    <section id="contact" class="home-section">
         <div class="contact__text">
             <div>
                 <p class="contact__cta">Wanna create something together? <a href="mailto:hola@ramiroandrade.com">Let's have a chat</a></p>
@@ -158,12 +117,9 @@
                 <img src="assets/img/contact.png" alt="">
             </picture>
         </div>
-        <div id="credits">
-            <p>Created in quaratine - © 2020 Ramiro Andrade</p>
-        </div>
     </section>
-    <!-- cd-section -->
-
+    <!-- home-section -->
+</div>
     <div class="menu__wrapper">
         <span class='menu'> 
       <span class='hamburger'></span>
@@ -178,14 +134,22 @@
         </div>
     </div>
 
-    <ul id="language">
-        <li><a href="../">es</a></li>
-        <li><a href="#" class="selected">en</a></li>
-    </ul>
-
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+        $(".main").onepage_scroll({
+          sectionContainer: "section",
+          easing: "ease-in-out",
+          animationTime: 800,
+          keyboard: true,
+          responsiveFallback: 768,
+          loop: false
+        });
+          });
+          
+    </script>
     <script src="assets/js/scripts.js"></script>
-    <script src="assets/js/lava.js"></script>
+    <script src="assets/js/jquery.onepage-scroll.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();

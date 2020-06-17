@@ -167,7 +167,7 @@ a {
 }
 /* Hero de la home */
 #hero {
-    background: #0055FF;
+    background: #002195;
     color: #FFF;
     padding: 50px 30px;
     height: 100vh;
@@ -220,7 +220,7 @@ a {
 }
 /* Hero de About y Projects */
 #subhero {
-    background: #0055FF;
+    background: #002195;
     color: #FFF;
     padding: 110px 0;
 }
@@ -235,7 +235,7 @@ a {
 }
 
 /* Estilos generales de secciones */
-.cd-section .wrapper {
+.home-section .wrapper {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -248,7 +248,7 @@ a {
     margin-bottom: 3.5rem;
 }
 /* Snippet Projecto */
-.cd-section.blue .project__role span, .cd-section.blue .project__title, .cd-section.blue .project__description, .cd-section.blue .button--secondary, .cd-section.blue .mini-about_info  {
+.home-section.blue .project__role span, .home-section.blue .project__title, .home-section.blue .project__description, .home-section.blue .button--secondary, .home-section.blue .mini-about_info  {
     color: #FFF;
 }
 .project .button--primary {
@@ -314,7 +314,7 @@ a {
     max-width: 225px;
     margin: 0 auto;
 }
-/* Footer */
+/* Contact */
 #contact {
     background: #002195;
     color: #FFF;
@@ -365,6 +365,26 @@ a {
     text-align: center;
     font-size: .85rem;
 }
+/* Footer */
+footer {
+    position: relative;
+    overflow: hidden;
+    height: 350px;
+    background: #002195;
+    color: #FFF;
+}
+footer .contact__text {
+    height: 100%;
+}
+footer .contact__links {
+    margin-bottom: 0;
+}
+footer .contact__img {
+    bottom: -350px;
+}
+footer p a {
+    color: #FFF;
+}
 /* Formato About*/
 #about {
     padding: 80px 0 0 0;
@@ -414,7 +434,7 @@ a {
 }
 /* Formato Case Study */
 #hero-case-study {
-    background: #0055FF;
+    background: #002195;
     color: #FFF;
     padding: 110px 0 0 0;
     text-align: center;
@@ -602,13 +622,13 @@ body.no-scroll main {
     z-index: 100;
     width: 50px;
     height: 50px;
-    background: #0055ff;
+    background: #002195;
     border-radius: 50% 50% 50% 50%;
     -webkit-transition: .5s ease-in-out;
     -o-transition: .5s ease-in-out;
     transition: .5s ease-in-out;
-    -webkit-box-shadow: 0 0 0 0 #0055ff, 0 0 0 0 #0055ff;
-            box-shadow: 0 0 0 0 #0055ff, 0 0 0 0 #0055ff;
+    -webkit-box-shadow: 0 0 0 0 #002195, 0 0 0 0 #002195;
+            box-shadow: 0 0 0 0 #002195, 0 0 0 0 #002195;
     cursor: pointer;
   }
 .menu__wrapper .hamburger {
@@ -760,15 +780,15 @@ body.no-scroll main {
     display: block;
     width: 40px;
     height: 40px;
-    background: #002DCA;
     cursor: pointer;
     background-size: 14px auto;
     border-radius: 50%;
+    /*
     -webkit-animation: bounce 2s infinite;
     animation: bounce 2s infinite;
     -webkit-transition: all .2s ease-in;
     -o-transition: all .2s ease-in;
-    transition: all .2s ease-in;
+    transition: all .2s ease-in;*/
 }
 .scroll-down:before {
     position: absolute;
@@ -871,21 +891,21 @@ body.no-scroll main {
     }
     /* Hero de la home */
     #hero h1 {
-        font-size: 3rem;
-        line-height: 3.5rem;
+        font-size: 4rem;
+        line-height: 4.2rem;
         margin-bottom: 0;
     }
     #hero p {
-        font-size: 1.6rem;
+        font-size: 1.8rem;
     }
     .hero__wrapper {
-        max-width: 680px;
+        max-width: 820px;
     }
     /* Snippet Proyecto */
     #last-projects .wrapper {
         max-width: 1200px;
     }
-    .cd-section .wrapper {
+    .home-section .wrapper {
         flex-direction: row;
         padding: 0 0 0 50px;
     }
@@ -1137,14 +1157,14 @@ body.no-scroll main {
         -webkit-box-shadow: none;
                 box-shadow: none;
     }
-    #contact p a, .menu__content p a {
+    #contact p a, .menu__content p a, footer p a {
         border-bottom: none;
         display: inline-block;
         -webkit-transform: perspective(1px) translateZ(0);
         transform: perspective(1px) translateZ(0);
         position: relative;
     }
-    .menu__item::before, #contact p a::before, .menu__content p a::before {
+    .menu__item::before, #contact p a::before, .menu__content p a::before, footer p a::before {
         content: "";
         position: absolute;
         z-index: -1;
@@ -1163,7 +1183,7 @@ body.no-scroll main {
         -o-transition-timing-function: ease-out;
            transition-timing-function: ease-out;
     }
-    .menu__item:hover:before, .menu__item:focus:before, .menu__item:active:before, #contact p a:hover:before, #contact p a:focus:before, #contact p a:active:before, .menu__content p a:hover:before, .menu__content p a:focus:before, .menu__content p a:active:before {
+    .menu__item:hover:before, .menu__item:focus:before, .menu__item:active:before, #contact p a:hover:before, #contact p a:focus:before, #contact p a:active:before, .menu__content p a:hover:before, .menu__content p a:focus:before, .menu__content p a:active:before, footer p a:hover:before {
         right: 0;
     }
     #language a:hover {
@@ -1173,6 +1193,9 @@ body.no-scroll main {
     #language.dark a:hover {
         background: #0055FF;
         color: #FFF;
+    }
+    footer {
+        padding-left: 100px;
     }
 }
 
@@ -1248,103 +1271,99 @@ body.no-scroll main {
 
 
 /* Home */
-.cd-section {
-    min-height: 100%;
-    position: relative;
+.home-section.blue {
+    background: #002195;
+}
+
+body.home {
+    margin: 0;
     overflow: hidden;
-  }
-  .cd-section.blue {
-    background: #0055ff;
-  }
-  
-  /* No Touch devices */
-  .cd-nav-trigger {
+    -webkit-transition: opacity 400ms;
+    -moz-transition: opacity 400ms;
+    transition: opacity 400ms;
+}
+
+body, .onepage-wrapper, html {
+    display: block;
+    position: static;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.onepage-wrapper {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: relative;
+    padding: 0;
+    -webkit-transform-style: preserve-3d;
+}
+
+.onepage-wrapper .section {
+    width: 100%;
+    height: 100%;
+}
+
+.onepage-pagination {
+    position: absolute;
+    right: 20px;
+    top: 42%;
+    z-index: 5;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.onepage-pagination li {
+    padding: 0;
+    text-align: center;
+}
+.onepage-pagination li a{
+    padding: 10px;
+    width: 4px;
+    height: 4px;
+    display: block;
+}
+.onepage-pagination li a:before{
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: #0055FF;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+}
+
+.onepage-pagination li a.active:before{
+    width: 10px;
+    height: 10px;
+    background: none;
+    border: 1px solid #0055FF;
+    margin-top: -4px;
+    left: 7px;
+}
+
+.disabled-onepage-scroll, .disabled-onepage-scroll .wrapper {
+    overflow: auto;
+}
+
+.disabled-onepage-scroll .onepage-wrapper .section {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+}
+.disabled-onepage-scroll .onepage-wrapper {
+    -webkit-transform: none !important;
+    -moz-transform: none !important;
+    transform: none !important;
+    -ms-transform: none !important;
+    min-height: 100%;
+}
+.disabled-onepage-scroll .onepage-pagination {
     display: none;
-  }
-  
-  #cd-vertical-nav {
-    position: fixed;
-    right: 40px;
-    top: 50%;
-    bottom: auto;
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    transform: translateY(-50%);
-    z-index: 1;
-  }
-  #cd-vertical-nav li {
-    text-align: right;
-  }
-  #cd-vertical-nav a {
-    display: inline-block;
-    /* prevent weird movements on hover when you use a CSS3 transformation - webkit browsers */
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-  }
-  #cd-vertical-nav a:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  #cd-vertical-nav a span {
-    float: right;
-    display: inline-block;
-    -webkit-transform: scale(0.6);
-    -moz-transform: scale(0.6);
-    -ms-transform: scale(0.6);
-    -o-transform: scale(0.6);
-    transform: scale(0.6);
-  }
-  #cd-vertical-nav a:hover span {
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -o-transform: scale(1);
-    transform: scale(1);
-  }
-  #cd-vertical-nav a:hover span.cd-dot {
-    background-color:#FFA040;
-  }
-  #cd-vertical-nav a:hover .cd-label {
-    opacity: 1;
-  }
-  #cd-vertical-nav a.is-selected .cd-dot {
-    background-color:#FFA040;
-  }
-  #cd-vertical-nav .cd-dot {
-    position: relative;
-    /* we set a top value in order to align the dot with the label. If you change label's font, you may need to change this top value*/
-    top: 8px;
-    height: 12px;
-    width: 12px;
-    border-radius: 50%;
-    border: solid 1px #FFA040;
-    -webkit-transition: -webkit-transform 0.2s, background-color 0.5s;
-    -moz-transition: -moz-transform 0.2s, background-color 0.5s;
-    transition: transform 0.2s, background-color 0.5s;
-    -webkit-transform-origin: 50% 50%;
-    -moz-transform-origin: 50% 50%;
-    -ms-transform-origin: 50% 50%;
-    -o-transform-origin: 50% 50%;
-    transform-origin: 50% 50%;
-  }
-  #cd-vertical-nav .cd-label {
-    position: relative;
-    margin-right: 10px;
-    padding: .4em .5em;
-    color: white;
-    font-size: 14px;
-    font-size: 0.875rem;
-    -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
-    -moz-transition: -moz-transform 0.2s, opacity 0.2s;
-    transition: transform 0.2s, opacity 0.2s;
-    opacity: 0;
-    -webkit-transform-origin: 100% 50%;
-    -moz-transform-origin: 100% 50%;
-    -ms-transform-origin: 100% 50%;
-    -o-transform-origin: 100% 50%;
-    transform-origin: 100% 50%;
-  }
-  
+}
+
+body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper, html {
+    position: inherit;
+}
