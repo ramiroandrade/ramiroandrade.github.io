@@ -891,15 +891,16 @@ body.no-scroll main {
     }
     /* Hero de la home */
     #hero h1 {
-        font-size: 4rem;
-        line-height: 4.2rem;
+        font-size: 3.8rem;
+        line-height: 4rem;
         margin-bottom: 0;
+        letter-spacing: -2px;
     }
     #hero p {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
     .hero__wrapper {
-        max-width: 820px;
+        max-width: 750px;
     }
     /* Snippet Proyecto */
     #last-projects .wrapper {
