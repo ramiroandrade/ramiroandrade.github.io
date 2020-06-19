@@ -204,6 +204,7 @@ a {
 #hero h1 {
     font-size: 3rem;
     line-height: 3.5rem;
+    letter-spacing: -2px;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
 }
 #hero h1 span {
@@ -240,9 +241,12 @@ a {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 30px;
+    padding: 100px 30px 30px 30px;
     max-width: 100%;
     height: 100vh;
+}
+.home-section .wrapper.reverse {
+    flex-direction: column-reverse;
 }
 #last-projects h2.especial {
     margin-bottom: 3.5rem;
@@ -265,7 +269,8 @@ a {
 }
 .project__title {
     font-family: 'Product Sans Black';
-    font-size: 1.75rem;
+    font-size: 2.4rem;
+    letter-spacing: -2px;
     margin-top: 0;
     margin-bottom: 0.5rem;
     line-height: 2.2rem;
@@ -275,8 +280,21 @@ a {
     max-width: 500px;
 }
 .project__img img {
-    margin: 50px auto 0 auto;
+    visibility: hidden;
+}
+.project__img img {
+    /*margin: 50px auto 0 auto;*/
     max-width: 400px;
+    position: absolute;
+    bottom: -80px;
+    right: 0;
+}
+.reverse .project__img img {
+    /*margin: 50px auto 0 auto;*/
+    max-width: 400px;
+    position: absolute;
+    top: -20px;
+    right: 0;
 }
 #projects .wrapper .project:first-child {
     margin-top: -150px;
@@ -297,6 +315,7 @@ a {
         -ms-flex-align: center;
             align-items: center;
     max-width: 900px;
+    justify-content: center;
 }
 #mini-about .wrapper h2, #mini-about .wrapper .button--link  {
     text-align: center;
@@ -309,11 +328,11 @@ a {
 #mini-about p {
     max-width: 600px;
 }
-#mini-about a {
+/* #mini-about a {
     display: block;
     max-width: 225px;
     margin: 0 auto;
-}
+}*/ 
 /* Contact */
 #contact {
     background: #002195;
@@ -877,6 +896,12 @@ body.no-scroll main {
         font-size: .65rem;
         margin: 0 .5rem 1.5rem 0;
     }
+    .project__img img {
+        bottom: -150px;
+    }
+    .reverse .project__img img {
+        top: -50px;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -907,6 +932,8 @@ body.no-scroll main {
     .home-section .wrapper {
         flex-direction: row;
         padding: 0 0 0 50px;
+        align-items: initial;
+        padding-top: 150px;
     }
     .project__info {
         max-width: 650px;
@@ -920,10 +947,11 @@ body.no-scroll main {
     .project__img.top {
         top: 0;
     }
-    .project__img img {
+    .project__img img, .reverse .project__img img {
         max-width: 600px;
         height: auto;
         margin-top: 0;
+        position: unset;
     }
     .project .button--primary {
         width: auto;
@@ -934,6 +962,7 @@ body.no-scroll main {
         -webkit-box-direction: normal;
             -ms-flex-direction: row;
                 flex-direction: row;
+                padding: 50px;
     }
     #mini-about .wrapper img {
         margin: 0 4rem 0 0;
@@ -969,6 +998,7 @@ body.no-scroll main {
     }
     #hero-case-study .wrapper .scroll-down {
         display: block;
+        cursor: pointer;
     }
     #hero-case-study .wrapper img {
         margin-bottom: 0;
@@ -1102,6 +1132,9 @@ body.no-scroll main {
     }
 }
 @media screen and (min-width: 1000px) {
+    .home-section .wrapper.reverse {
+        flex-direction: row;
+    }
     .project {
         padding: 65px 65px 0 65px;
         -webkit-box-align: center;
@@ -1217,7 +1250,7 @@ body.no-scroll main {
 }
 
 @media screen and (min-width: 1400px) {
-    .project__img img {
+    .project__img img, .reverse .project__img img {
         max-width: 700px;
     }
 }
@@ -1306,6 +1339,7 @@ body, .onepage-wrapper, html {
 .onepage-wrapper .section {
     width: 100%;
     height: 100%;
+    overflow: hidden;
 }
 
 .onepage-pagination {

@@ -69,7 +69,7 @@
     <!-- home-section -->
 
     <section id="third-project" class="home-section">
-        <div class="wrapper">
+        <div class="wrapper reverse">
             <div class="project__info">
                 <div class="project__role">
                     <span>UX / UI Design</span>
@@ -143,12 +143,14 @@
           easing: "ease-in-out",
           animationTime: 800,
           keyboard: true,
-          responsiveFallback: 768,
           loop: false
         });
           });
     </script>
     <script src="assets/js/jquery.onepage-scroll.js"></script>
+    <script>
+        $('.project__img img').css('visibility', 'visible');
+    </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
