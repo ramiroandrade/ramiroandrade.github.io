@@ -1434,3 +1434,7 @@ body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper, html {
     position: inherit;
     overflow: auto;
 }
+
+body.disabled-onepage-scroll .onepage-wrapper .section {
+    height: auto;
+}
