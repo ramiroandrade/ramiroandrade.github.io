@@ -1430,11 +1430,12 @@ body, .onepage-wrapper, html {
     display: none;
 }
 
-body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper, html {
+body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper {
     position: inherit;
     overflow: auto;
 }
 
-body.disabled-onepage-scroll .onepage-wrapper .section {
-    height: auto;
+body.disabled-onepage-scroll .section {
+    height: 100vh!important;
 }
+
