@@ -902,12 +902,6 @@ body.no-scroll main {
         font-size: 1.8rem;
         line-height: 1.8rem;
     }
-    .project__img img {
-        bottom: -200px;
-    }
-    .reverse .project__img img {
-        top: -120px;
-    }
 }
 
 @media screen and (max-width: 600px) {
@@ -920,6 +914,12 @@ body.no-scroll main {
     .home-section .wrapper {
         position: relative;
         overflow: hidden;
+    }
+    .project__img img {
+        bottom: -200px;
+    }
+    .reverse .project__img img {
+        top: -120px;
     }
 }
 
