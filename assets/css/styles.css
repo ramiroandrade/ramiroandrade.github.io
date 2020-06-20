@@ -468,6 +468,7 @@ footer p a {
 #hero-case-study .wrapper {
     max-width: 800px;
     text-align: center;
+    width: 100%;
 }
 #hero-case-study .wrapper .scroll-down {
     position: relative;
@@ -475,8 +476,10 @@ footer p a {
     display: none;
 }
 #hero-case-study h1 {
-    font-size: 2rem;
-    margin-bottom: .5rem;
+    font-size: 2.2rem;
+    line-height: 2rem;
+    letter-spacing: -2px;
+    margin-bottom: 1.6rem;
 }
 #hero-case-study p.destacado {
     font-family: 'Product Sans Light';
@@ -899,6 +902,11 @@ body.no-scroll main {
     #hero p {
         font-size: 1.2rem;
     }
+    #hero-case-study h1 {
+        font-size: 1.8rem;
+        line-height: 1.8rem;
+        margin-bottom: 1rem;
+    }
     .project__role span {
         font-size: .65rem;
         margin: 0 .5rem 1.5rem 0;
@@ -1029,10 +1037,16 @@ body.no-scroll main {
         -webkit-transform: translate(-50%);
         -ms-transform: translate(-50%);
             transform: translate(-50%);
+        max-width: 600px;
     }
     #hero-case-study .wrapper .scroll-down {
         display: block;
         cursor: pointer;
+    }
+    #hero-case-study h1 {
+        font-size: 3rem;
+        line-height: 3rem;
+        margin-bottom: 2rem;
     }
     #hero-case-study .wrapper img {
         margin-bottom: 0;
@@ -1185,11 +1199,14 @@ body.no-scroll main {
     .project__role span {
         margin: 0 1rem 2.5rem 0;
     }
+    #hero-case-study .wrapper {
+        max-width: 800px;
+    }
     #hero-case-study h1 {
-        font-size: 3rem;
-        line-height: 3rem;
+        font-size: 3.5rem;
+        line-height: 3.5rem;
         letter-spacing: -2px;
-        max-width: 500px;
+        max-width: 700px;
         margin: 0 auto .5rem auto;
     }
     .case-study__special, .case-study__special > div {
