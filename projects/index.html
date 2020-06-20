@@ -16,12 +16,13 @@
     <meta name="theme-color" content="#0055FF" />
 </head>
 
-<body>
-    <main>
-        <section id="subhero">
+<body class="home">
+    <div class="main">
+        <section id="subhero" class="home-section projects">
             <div class="wrapper">
-                <h1>Projects</h1>
-                <p>Throughout these years I have worked on digital products and services for a wide variety of clients, creating solutions that are used by thousands of people on a daily basis.</p>
+                <h1 data-aos="fade-in" data-aos-delay="200" data-aos-duration="1500">Projects</h1>
+                <p data-aos="fade-in" data-aos-delay="500" data-aos-duration="1500">Throughout these years I have worked on digital products and services for a wide variety of clients, creating solutions that are used by thousands of people on a daily basis.</p>
+                <span data-aos="fade-scroll" data-aos-delay="1500" data-aos-offset="-500" data-aos-duration="500" class="scroll-down"></span>
             </div>
         </section>
 
@@ -126,22 +127,24 @@
         </section>
         <!-- home-section -->
 
-    </main>
-
-    <footer>
-        <div class="contact__text">
-            <div>
-                <p class="contact__cta">Wanna create something together? <a href="mailto:hola@ramiroandrade.com">Let's have a chat</a></p>
-                <p class="contact__links">You can also find me in <a href="https://www.linkedin.com/in/ramiroandradeguenzatti/">Linkedin</a> and <a href="https://dribbble.com/ramiroandrade">Dribbble</a>.</p>
+        <section id="contact" class="home-section">
+            <div class="contact__text">
+                <div>
+                    <p class="contact__cta">Wanna create something together? <a href="mailto:hola@ramiroandrade.com">Let's have a chat</a></p>
+                    <p class="contact__links">You can also find me in <a href="https://www.linkedin.com/in/ramiroandradeguenzatti/">Linkedin</a> and <a href="https://dribbble.com/ramiroandrade">Dribbble</a>.</p>
+                </div>
             </div>
-        </div>
-        <div class="contact__img">
-            <picture>
-                <source srcset="../assets/img/contact.webp" type="image/webp">
-                <img src="../assets/img/contact.png" alt="">
-            </picture>
-        </div>
-    </footer>
+            <div class="contact__img home-img">
+                <picture>
+                    <source srcset="../assets/img/contact.webp" type="image/webp">
+                    <img src="../assets/img/contact.png" alt="">
+                </picture>
+            </div>
+        </section>
+        <!-- home-section -->
+</div>
+
+    
 
     <div class="menu__wrapper">
         <span class='menu'> 
@@ -159,18 +162,27 @@
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="../assets/js/scripts.js"></script>
+    <script>
+        $(document).ready(function(){
+        $(".main").onepage_scroll({
+          sectionContainer: "section",
+          easing: "ease-in-out",
+          animationTime: 800,
+          responsiveFallback: 700,
+          keyboard: true,
+          loop: false
+        });
+          });
+    </script>
+    <script src="../assets/js/jquery.onepage-scroll.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-47955547-1"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'UA-47955547-1');
+        $(document).ready(function() {
+        $('.home-img').css('visibility', 'visible');
+        });
     </script>
 </body>
 

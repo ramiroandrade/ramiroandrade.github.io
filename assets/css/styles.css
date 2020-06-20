@@ -223,7 +223,12 @@ a {
 #subhero {
     background: #002195;
     color: #FFF;
-    padding: 110px 0;
+}
+#subhero .wrapper {
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 800px;
+    justify-content: center;
 }
 #subhero h1 {
     font-size: 3rem;

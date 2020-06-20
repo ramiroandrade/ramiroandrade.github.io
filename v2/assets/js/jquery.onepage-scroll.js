@@ -13,7 +13,8 @@
  * License: GPL v3
  *
  * ========================================================== */
-
+if ( $(window).width() > 600) {
+  
 !function($){
 
   var defaults = {
@@ -424,3 +425,4 @@
 
 
 }(window.jQuery);
+}

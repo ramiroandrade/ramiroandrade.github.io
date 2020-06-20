@@ -902,11 +902,24 @@ body.no-scroll main {
         font-size: 1.8rem;
         line-height: 1.8rem;
     }
+}
+
+@media screen and (max-width: 600px) {
+    body.home {
+        overflow: auto!important;
+    }
+    .home-img {
+        visibility: visible;
+    }
+    .home-section .wrapper {
+        position: relative;
+        overflow: hidden;
+    }
     .project__img img {
-        bottom: -150px;
+        bottom: -200px;
     }
     .reverse .project__img img {
-        top: -80px;
+        top: -120px;
     }
 }
 
@@ -1430,6 +1443,3 @@ body, .onepage-wrapper, html {
     display: none;
 }
 
-body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper, html {
-    position: inherit;
-}
