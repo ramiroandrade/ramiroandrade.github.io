@@ -910,6 +910,19 @@ body.no-scroll main {
     }
 }
 
+@media screen and (max-width: 600px) {
+    body.home {
+        overflow: auto!important;
+    }
+    .home-img {
+        visibility: visible;
+    }
+    .home-section .wrapper {
+        position: relative;
+        overflow: hidden;
+    }
+}
+
 @media screen and (min-width: 768px) {
     /* Títulos */
     h2 {
@@ -1428,14 +1441,5 @@ body, .onepage-wrapper, html {
 }
 .disabled-onepage-scroll .onepage-pagination {
     display: none;
-}
-
-body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper {
-    position: inherit;
-    overflow: auto;
-}
-
-body.disabled-onepage-scroll .section {
-    height: 100vh!important;
 }
 
