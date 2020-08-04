@@ -166,7 +166,7 @@ a {
 }
 /* Hero de la home */
 #hero {
-    background: #002195;
+    background: #0055ff;
     color: #FFF;
     padding: 50px 30px;
     height: 100vh;
@@ -339,7 +339,7 @@ a {
 }
 /* Contact */
 #contact {
-    background: #002195;
+    background: #0055FF;
     color: #FFF;
     display: flex;
     align-items: center;
@@ -457,12 +457,15 @@ footer p a {
 }
 /* Formato Case Study */
 #hero-case-study {
-    background: #002195;
+    background: #0055ff;
     color: #FFF;
     padding: 110px 0 0 0;
     text-align: center;
     /*display: flex;
     flex-direction: column;*/
+}
+#hero-case-study.emochi {
+    background: #512683;
 }
 #hero-case-study .wrapper {
     max-width: 800px;
@@ -512,6 +515,17 @@ q {
     background: #002195;
     color: #FFF;
     border-radius: 5px;
+}
+.video-flow {
+    background: #512683;
+    overflow: hidden;
+    border-radius: 3px;
+}
+.video-flow video {
+    max-width: 308px;
+    margin: 0 auto;
+    display: block;
+    box-shadow: 0 0 15px 15px rgba(0, 0, 0, 0.25);
 }
 video {
     width: 100%;
@@ -671,13 +685,13 @@ body.no-scroll main {
     z-index: 100;
     width: 50px;
     height: 50px;
-    background: #002195;
+    background: #0055ff;
     border-radius: 50% 50% 50% 50%;
     -webkit-transition: .5s ease-in-out;
     -o-transition: .5s ease-in-out;
     transition: .5s ease-in-out;
-    -webkit-box-shadow: 0 0 0 0 #002195, 0 0 0 0 #002195;
-            box-shadow: 0 0 0 0 #002195, 0 0 0 0 #002195;
+    -webkit-box-shadow: 0 0 0 0 #0055ff, 0 0 0 0 #0055ff;
+            box-shadow: 0 0 0 0 #0055ff, 0 0 0 0 #0055ff;
     cursor: pointer;
   }
 .menu__wrapper .hamburger {
@@ -1384,7 +1398,7 @@ body.no-scroll main {
 
 /* Home */
 .home-section.blue {
-    background: #002195;
+    background: #0055ff;
 }
 
 .home-img {
@@ -1446,7 +1460,7 @@ body, .onepage-wrapper, html {
     position: absolute;
     width: 4px;
     height: 4px;
-    background: #0055FF;
+    background: #002DCA;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -1456,7 +1470,7 @@ body, .onepage-wrapper, html {
     width: 10px;
     height: 10px;
     background: none;
-    border: 1px solid #0055FF;
+    border: 1px solid #002DCA;
     margin-top: -4px;
     left: 7px;
 }
