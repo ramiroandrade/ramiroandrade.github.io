@@ -220,7 +220,7 @@ a {
 }
 /* Hero de About y Projects */
 #subhero {
-    background: #002195;
+    background: #0055ff;
     color: #FFF;
 }
 #subhero .wrapper {
@@ -339,7 +339,7 @@ a {
 }
 /* Contact */
 #contact {
-    background: #0055FF;
+    background: #002DCA;
     color: #FFF;
     display: flex;
     align-items: center;
@@ -393,7 +393,7 @@ footer {
     position: relative;
     overflow: hidden;
     height: 350px;
-    background: #002195;
+    background: #002DCA;
     color: #FFF;
 }
 footer .contact__text {
@@ -468,7 +468,7 @@ footer p a {
     background: #512683;
 }
 #hero-case-study.devoto {
-    background: #26407C;
+    background: #0B52A9;
 }
 #hero-case-study .wrapper {
     max-width: 800px;
@@ -681,6 +681,7 @@ body.no-scroll main {
 .menu-open .menu__content {
     visibility: visible;
 }
+
 .menu__wrapper .menu {
     position: fixed;
     left: 20px;
@@ -696,7 +697,29 @@ body.no-scroll main {
     -webkit-box-shadow: 0 0 0 0 #0055ff, 0 0 0 0 #0055ff;
             box-shadow: 0 0 0 0 #0055ff, 0 0 0 0 #0055ff;
     cursor: pointer;
-  }
+}
+.menu__wrapper .menu.devoto {
+    background: #0B52A9;
+    -webkit-box-shadow: 0 0 0 0 #0B52A9, 0 0 0 0 #0B52A9;
+            box-shadow: 0 0 0 0 #0B52A9, 0 0 0 0 #0B52A9;
+}
+.menu-open .menu.devoto {
+    -webkit-box-shadow: 0 0 0 100vw #002DCA, 0 0 0 100vh #002DCA;
+            box-shadow: 0 0 0 100vw #002DCA, 0 0 0 100vh #002DCA;
+    border-radius: 0;
+    background: #002DCA;
+}
+.menu__wrapper .menu.emochi {
+    background: #512683;
+    -webkit-box-shadow: 0 0 0 0 #512683, 0 0 0 0 #512683;
+            box-shadow: 0 0 0 0 #512683, 0 0 0 0 #512683;
+}
+.menu-open .menu.emochi {
+    -webkit-box-shadow: 0 0 0 100vw #002DCA, 0 0 0 100vh #002DCA;
+            box-shadow: 0 0 0 100vw #002DCA, 0 0 0 100vh #002DCA;
+    border-radius: 0;
+    background: #002DCA;
+}
 .menu__wrapper .hamburger {
     position: absolute;
     top: 25px;
