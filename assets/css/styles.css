@@ -292,7 +292,7 @@ a {
 .project__img img {
     width: 100%;
     position: absolute;
-    bottom: -80px;
+    bottom: -100px;
     right: 0;
 }
 .reverse .project__img img {
@@ -467,6 +467,9 @@ footer p a {
 #hero-case-study.emochi {
     background: #512683;
 }
+#hero-case-study.devoto {
+    background: #26407C;
+}
 #hero-case-study .wrapper {
     max-width: 800px;
     text-align: center;
@@ -512,7 +515,7 @@ q {
     font-size: 1.2rem;
     line-height: 1.8rem;
     display: block;
-    background: #002195;
+    background: #512683;
     color: #FFF;
     border-radius: 5px;
 }
@@ -959,11 +962,11 @@ body.no-scroll main {
         position: relative;
         overflow: hidden;
     }
-    .project__img img {
+    /*.project__img img {
         bottom: -200px;
-    }
+    }*/
     .reverse .project__img img {
-        top: -120px;
+        top: -80px;
     }
 }
 
