@@ -166,7 +166,7 @@ a {
 }
 /* Hero de la home */
 #hero {
-    background: #0055ff;
+    background: #002DCA;
     color: #FFF;
     padding: 50px 30px;
     height: 100vh;
@@ -220,7 +220,7 @@ a {
 }
 /* Hero de About y Projects */
 #subhero {
-    background: #0055ff;
+    background: #002DCA;
     color: #FFF;
 }
 #subhero .wrapper {
@@ -470,6 +470,9 @@ footer p a {
 #hero-case-study.devoto {
     background: #0B52A9;
 }
+#hero-case-study.nextbus {
+    background: #069910;
+}
 #hero-case-study .wrapper {
     max-width: 800px;
     text-align: center;
@@ -689,13 +692,13 @@ body.no-scroll main {
     z-index: 100;
     width: 50px;
     height: 50px;
-    background: #0055ff;
+    background: #002DCA;
     border-radius: 50% 50% 50% 50%;
     -webkit-transition: .5s ease-in-out;
     -o-transition: .5s ease-in-out;
     transition: .5s ease-in-out;
-    -webkit-box-shadow: 0 0 0 0 #0055ff, 0 0 0 0 #0055ff;
-            box-shadow: 0 0 0 0 #0055ff, 0 0 0 0 #0055ff;
+    -webkit-box-shadow: 0 0 0 0 #002DCA, 0 0 0 0 #002DCA;
+            box-shadow: 0 0 0 0 #002DCA, 0 0 0 0 #002DCA;
     cursor: pointer;
 }
 .menu__wrapper .menu.devoto {
@@ -704,10 +707,10 @@ body.no-scroll main {
             box-shadow: 0 0 0 0 #0B52A9, 0 0 0 0 #0B52A9;
 }
 .menu-open .menu.devoto {
-    -webkit-box-shadow: 0 0 0 100vw #002DCA, 0 0 0 100vh #002DCA;
-            box-shadow: 0 0 0 100vw #002DCA, 0 0 0 100vh #002DCA;
+    -webkit-box-shadow: 0 0 0 100vw #0055FF, 0 0 0 100vh #0055FF;
+            box-shadow: 0 0 0 100vw #0055FF, 0 0 0 100vh #0055FF;
     border-radius: 0;
-    background: #002DCA;
+    background: #0055FF;
 }
 .menu__wrapper .menu.emochi {
     background: #512683;
@@ -715,10 +718,32 @@ body.no-scroll main {
             box-shadow: 0 0 0 0 #512683, 0 0 0 0 #512683;
 }
 .menu-open .menu.emochi {
-    -webkit-box-shadow: 0 0 0 100vw #002DCA, 0 0 0 100vh #002DCA;
-            box-shadow: 0 0 0 100vw #002DCA, 0 0 0 100vh #002DCA;
+    -webkit-box-shadow: 0 0 0 100vw #0055FF, 0 0 0 100vh #0055FF;
+            box-shadow: 0 0 0 100vw #0055FF, 0 0 0 100vh #0055FF;
     border-radius: 0;
-    background: #002DCA;
+    background: #0055FF;
+}
+.menu__wrapper .menu.others {
+    background: #0055FF;
+    -webkit-box-shadow: 0 0 0 0 #0055FF, 0 0 0 0 #0055FF;
+            box-shadow: 0 0 0 0 #0055FF, 0 0 0 0 #0055FF;
+}
+.menu-open .menu.others {
+    -webkit-box-shadow: 0 0 0 100vw #0055FF, 0 0 0 100vh #0055FF;
+            box-shadow: 0 0 0 100vw #0055FF, 0 0 0 100vh #0055FF;
+    border-radius: 0;
+    background: #0055FF;
+}
+.menu__wrapper .menu.nextbus {
+    background: #069910;
+    -webkit-box-shadow: 0 0 0 0 #069910, 0 0 0 0 #069910;
+            box-shadow: 0 0 0 0 #069910, 0 0 0 0 #069910;
+}
+.menu-open .menu.nextbus {
+    -webkit-box-shadow: 0 0 0 100vw #0055FF, 0 0 0 100vh #0055FF;
+            box-shadow: 0 0 0 100vw #0055FF, 0 0 0 100vh #0055FF;
+    border-radius: 0;
+    background: #0055FF;
 }
 .menu__wrapper .hamburger {
     position: absolute;
@@ -756,10 +781,10 @@ body.no-scroll main {
     display: none; 
 }
 .menu-open .menu {
-    -webkit-box-shadow: 0 0 0 100vw #002DCA, 0 0 0 100vh #002DCA;
-            box-shadow: 0 0 0 100vw #002DCA, 0 0 0 100vh #002DCA;
+    -webkit-box-shadow: 0 0 0 100vw #0055FF, 0 0 0 100vh #0055FF;
+            box-shadow: 0 0 0 100vw #0055FF, 0 0 0 100vh #0055FF;
     border-radius: 0;
-    background: #002DCA;
+    background: #0055FF;
 }
 .menu-open .menu .hamburger {
     -webkit-transform: rotate(45deg);
@@ -1424,7 +1449,7 @@ body.no-scroll main {
 
 /* Home */
 .home-section.blue {
-    background: #0055ff;
+    background: #002DCA;
 }
 
 .home-img {
