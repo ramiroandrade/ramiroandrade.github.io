@@ -164,7 +164,6 @@ a {
 }
 /* Hero de la home */
 #hero {
-    height: 400px;
     color: #FFF;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -179,13 +178,14 @@ a {
 #hero h1 {
     font-family: 'Open Sans';
     font-weight: 400;
-    font-size: 2.6rem;
-    line-height: 2.8rem;
+    font-size: 2.4rem;
+    line-height: 2.6rem;
     letter-spacing: -3px;
     margin: 0 auto;
 }
 #hero h1 a{
     text-underline-offset: 7px;
+    text-decoration-thickness: 3px;
 }
 #hero p {
     font-size: 1.6rem;
@@ -956,7 +956,7 @@ body.no-scroll main {
 .menu__item {
     font-family: 'Product Sans Bold';
     font-size: 3rem;
-    line-height: 3rem;
+    line-height: 3.4rem;
     margin-bottom: 2.5rem;
     display: inline-block;
     -webkit-transform: perspective(1px) translateZ(0);
