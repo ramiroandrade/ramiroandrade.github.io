@@ -781,6 +781,7 @@ opacity: .8;
     width: 100%;
     background-color: #1d1d1d;
     padding: 50px;
+    position: relative;
 }
 .case-study__info {
     display: flex;
@@ -1552,7 +1553,7 @@ body.light-mode {
 
 .scroll-down {
     position: absolute;
-    bottom: 112px;
+    top: -16px;
     left: 50%;
     margin-left: -20px;
     display: block;
