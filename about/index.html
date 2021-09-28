@@ -3,92 +3,167 @@
 
 <head>
     <meta charset="utf-8">
-    <title>About me - Ramiro Andrade UX / UI Designer</title>
+    <title>About | Ramiro Andrade · Digital Product Designer</title>
     <meta name="description" content="I design digital experiences with focus on usability and accessibility. I addition to my design skills, I have front-end knowledge and a background in marketing.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../assets/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/carousel.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/apple-touch-icon.png">
     <link rel="icon" type="image/png" href="../assets/img//favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="../assets/img/favicon-16x16.png" sizes="16x16">
-    <meta name="theme-color" content="#0055FF" />
+    <meta name="theme-color" content="#131313" />
 </head>
 
 <body>
     <main>
+        <section id="subhero" class="about">
+            <div class="wrapper">
+                <h1 data-aos="fade-in" data-aos-delay="200" data-aos-duration="1500">About</h1>
+                <p data-aos="fade-in" data-aos-delay="500" data-aos-duration="1500">A few words about my career path and some tidbits about my personality</p>
+            </div>
+        </section>
         <section id="about">
             <div class="wrapper">
-                <picture>
-                    <!-- <source srcset="assets/img/ramiro-andrade.webp" type="image/webp"> -->
-				    <img src="../assets/img/ramiro-andrade-b.png" alt="Foto de Ramiro Andrade">
-                </picture>
-                <h1 class="text-center">A bit about me</h1>
-
-                <p>I was born in 1989 and they called me <strong>Ramiro Andrade</strong>. I'm uruguayan but I don't drink mate, that's why I had to exile in Barcelona. I have a bachelor's degree in <a href="https://fcd.ort.edu.uy/licenciatura-en-comunicacion-publicidad-y-marketing" target="_blank" rel="noopener noreferrer">Advertising Communication</a> from Universidad ORT and a master's degree in <a href="https://www.baued.es/en/studies/masters-and-postgraduate-degrees/master-in-digital-experiences-design" target="_blank" rel="noopener noreferrer"> Digital Experiences Design</a> from BAU.</p>
-                <p>On the way to becoming an advertising creative I came across interaction design and found another way to live on creativity. Thus, for more than 7 years I've been creating all kinds of digital experiences with special focus on usability and accessibility.</p>
-                <p>In this newfound path I was also able to work as a front-end developer, learn and use various work and design methodologies, do all kinds of user tests and even corrected an error in Google's Keep app (I have <a href="https://twitter.com/RamiroAndrade11/status/745416436726796288" target="_blank" rel="noopener noreferrer">proof</a>, I choose to believe).</p>
-                <p class="u-mb3">For more details about my training, employment and skills you can <a href="../assets/Ramiro-Andrade-Resume.pdf" download="Ramiro Andrade - Resume">download my resume (133kb PDF)</a>.</p>
+                <p data-aos="fade-in" data-aos-delay="1000" data-aos-duration="1500">I was born in 1989 and they called me Ramiro Andrade. I'm uruguayan but I don't drink mate, that's why I had to exile in Barcelona. I have a bachelor's degree in <a href="https://fcd.ort.edu.uy/licenciatura-en-comunicacion-publicidad-y-marketing" target="_blank" rel="noopener noreferrer">Advertising Communication</a> from ORT University and a master's degree in <a href="https://www.baued.es/en/studies/masters-and-postgraduate-degrees/master-in-digital-experiences-design" target="_blank" rel="noopener noreferrer"> Digital Experiences Design</a> from BAU.</p>
+                <p data-aos="fade-in" data-aos-delay="1200" data-aos-duration="1500">On the way to becoming an advertising creative I came across interaction design and found another way to live on creativity. Thus, for more than 9 years I've been creating all kinds of digital experiences with special focus on usability and accessibility.</p>
+                <p data-aos="fade-in" data-aos-delay="1400" data-aos-duration="1500">In this newfound path I was also able to work as a front-end developer, learn and use various work and design methodologies, do all kinds of user tests and even corrected an error in Google's Keep app (I have <a href="https://twitter.com/RamiroAndrade11/status/745416436726796288" target="_blank" rel="noopener noreferrer">proof</a>, I choose to believe). <br> For more details about my training, employment and skills you can <a href="../assets/Ramiro-Andrade-Resume.pdf" download="Ramiro_Andrade-CV">download my resume (191kb PDF)</a>.</p>
             </div>
             <div class="lists">
                 <div class="wrapper">
-                    <h2><span class="emoji">&#128525;</span>I enjoy</h2>
-                    <ul class="about__list enjoy">
-                        <li><span>Science fiction in all its forms</span></li>
-                        <li><span>The music of Tame Impala, Daft Punk, Arcade Fire and Royksopp among many others</span></li>
-                        <li><span>Making people laugh with bad jokes</span></li>
-                    </ul>
+                    <div class="about__list__wrapper aos-init aos-animate" data-aos="fade-up" data-aos-duration="6000">
+                        <h2><span class="emoji">&#128525;</span>I enjoy</h2>
+                        <ul class="about__list enjoy">
+                            <li><span>Science fiction in all its forms</span></li>
+                            <li><span>The music of Tame Impala, Daft Punk, Arcade Fire, Röyksopp, Groove Armada, Massive Attack and Phoenix among many others</span></li>
+                            <li><span>Sugary drinks, the weirder the better</span></li>
+                            <li><span>Making people laugh with bad jokes</span></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="about__list__wrapper aos-init aos-animate" data-aos="fade-up" data-aos-duration="6000">
+                        <h2><span class="emoji">&#128548;</span>I suffer with</h2>
+                        <ul class="about__list suffer">
+                            <li><span>Raisins, hearts of palm and cherries in syrup</span></li>
+                            <li><span>Microsoft Windows errors and inconsistencies</span></li>
+                            <li><span>Peñarol's hires and Arsenal's continued failures since 2004</span></li>
+                        </ul>
+                    </div>
 
-                    <h2><span class="emoji">&#128548;</span>I suffer with</h2>
-                    <ul class="about__list suffer">
-                        <li><span>Raisins, hearts of palm and cherries in syrup</span></li>
-                        <li><span>Microsoft Windows errors and inconsistencies</span></li>
-                        <li><span>Peñarol's hires and Arsenal's continued failures since 2004</span></li>
-                    </ul>
-
-                    <h2><span class="emoji">&#128556;</span>Random data</h2>
-                    <ul class="about__list random">
-                        <li><span>I am an only child, an only nephew and an only grandson</span></li>
-                        <li><span>I don't know how to make gum balloons</span></li>
-                        <li><span>I have a scar on my forehead but I'm not a wizard</span></li>
-                        <li><span>I was once ignored by Arjen Robben</span></li>
-                    </ul>
+                    <div class="about__list__wrapper aos-init aos-animate" data-aos="fade-up" data-aos-duration="6000"> 
+                        <h2><span class="emoji">&#128556;</span>Random data</h2>
+                        <ul class="about__list random">
+                            <li><span>I am an only child, an only nephew and an only grandson</span></li>
+                            <li><span>Don't know how to make gum balloons</span></li>
+                            <li><span>Have a scar on my forehead but I'm not a wizard</span></li>
+                            <li><span>Was once totally ignored by Arjen Robben</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel owl-carousel">
+                <div class="card card-1">
+                    <picture>
+                        <img src="../assets/img/about/sunset.jpg">
+                    </picture>
+                    <p class="caption">Posing in front of an uruguayan sunset (2019)</p>
+                </div>
+                <div class="card card-2">
+                    <picture>
+                        <img src="../assets/img/about/shibuya.jpg">
+                    </picture>
+                    <p class="caption">Between the crowd in Shibuya, Tokyo (2015)</p>
+                </div>
+                <div class="card card-3">
+                    <picture>
+                        <img src="../assets/img/about/newyork.jpg">
+                    </picture>
+                    <p class="caption">Blurry on top of Rockefeller Center (2013)</p>
+                </div>
+                <div class="card card-4">
+                    <picture>
+                        <img src="../assets/img/about/altea.jpg">
+                    </picture>
+                    <p class="caption">With my mom in a trip to Alicante (2004)</p>
+                </div>
+                <div class="card card-4">
+                    <picture>
+                        <img src="../assets/img/about/mago.jpg">
+                    </picture>
+                    <p class="caption">During a magin show in my birthday (1997)</p>
+                </div>
+                <div class="card card-5">
+                    <picture>
+                        <img src="../assets/img/about/peñarol.jpg">
+                    </picture>
+                    <p class="caption">Rocking Peñarol's full kit (1996)</p>
                 </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <div class="contact__text">
-            <div>
-                <p class="contact__cta">Wanna create something together? <a href="mailto:hola@ramiroandrade.com">Let's have a chat</a></p>
-                <p class="contact__links">You can also find me in <a href="https://www.linkedin.com/in/ramiroandradeguenzatti/">Linkedin</a> and <a href="https://dribbble.com/ramiroandrade">Dribbble</a>.</p>
+        <div id="mini-footer">
+            <div class="wrapper">
+                <div>
+                    <p>Barcelona · 2021</p>
+                </div>
+                <div>
+                    <p>Write me at <a href="mailto:hola@ramiroandrade.com">hola@ramiroandrade.com</a></p>
+                </div>
+                <div class="links">
+                    <p class="u-mr1"><a href="https://www.linkedin.com/in/ramiroandradeguenzatti/" target="_blank" rel="noopener noreferrer">Linkedin</a></p>
+                    <p><a href="https://dribbble.com/ramiroandrade" target="_blank" rel="noopener noreferrer">Dribbble</a></p>
+                </div>
             </div>
-        </div>
-        <div class="contact__img">
-            <picture>
-                <!-- <source srcset="assets/img/contact.webp" type="image/webp"> -->
-                <img src="../assets/img/contact.png" alt="">
-            </picture>
         </div>
     </footer>
 
     <div class="menu__wrapper">
         <span class='menu'> 
-            <span class='hamburger'></span>
+      <span class='hamburger'></span>
         </span>
         <div class="menu__content">
             <ul>
                 <li> <a href='../' class="menu__item">Home</a> </li>
-                <li> <a href='../about' class="menu__item">About me</a> </li>
-                <li> <a href='../projects' class="menu__item">Projects</a> </li>
+                <li> <a href='../about/' class="menu__item">About</a> </li>
+                <li> <a href='../work' class="menu__item">Work</a> </li>
+                <!-- <li> <a href='../blog' class="menu__item">Blog</a> </li> -->
             </ul>
-            <p>You can write me at <a href="mailto:hola@ramiroandrade.com">hola@ramiroandrade.com</a> or find me on <a href="https://www.linkedin.com/in/ramiroandradeguenzatti/">Linkedin</a> and <a href="https://dribbble.com/ramiroandrade">Dribbble</a>.</p>
+            <p>Write me at <a href="mailto:hola@ramiroandrade.com">hola@ramiroandrade.com</a> or find me in <a href="https://www.linkedin.com/in/ramiroandradeguenzatti/" target="_blank" rel="noopener noreferrer">Linkedin</a> and <a href="https://dribbble.com/ramiroandrade" target="_blank" rel="noopener noreferrer">Dribbble</a>.</p>
         </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="../assets/js/scripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        $(".carousel").owlCarousel({
+          margin: 40,
+          loop: true,
+          center: true,
+          responsive: {
+            0:{
+              items:1,
+              nav: false
+            },
+            600:{
+              items:2,
+              nav: false
+            },
+            1000:{
+              items:2,
+              nav: false
+            }
+          }
+        });
+     </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-47955547-1"></script>
     <script>

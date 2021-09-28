@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>DGI | Ramiro Andrade · Digital Product Designer</title>
+    <meta name="description" content="I design digital experiences with focus on usability and accessibility. I addition to my design skills, I have front-end knowledge and a background in marketing.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="../../assets/img//favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="../../assets/img/favicon-16x16.png" sizes="16x16">
+    <meta name="theme-color" content="#131313" />
+</head>
+
+<body>
+    <main>
+        <section id="hero-case-study" class="dgi">
+            <div class="wrapper">
+                <span>DGI</span>
+                <h1>The simplest way to <br> do your taxes</h1>
+            </div>
+            <picture>
+                <source srcset="" type="image/webp">
+                <img src="../../assets/img/dgi/img-irpf.png" alt="">
+            </picture>
+            <div class="case-study__info-wrapper">
+                <span class="scroll-down"></span>
+                <div class="case-study__info">
+                    <div>
+                        <h4>Role</h4>
+                        <p>Design Lead</p>
+                    </div>
+                    <div>
+                        <h4>Project type</h4>
+                        <p>Mobile App Redesign</p>
+                    </div>
+                    <div>
+                        <h4>Tasks</h4>
+                        <p>UX / UI Design, Branding</p>
+                    </div>
+                    <div>
+                        <h4>Tools</h4>
+                        <p>Figma, Illustrator</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="case-study__header">
+            <div class="wrapper">
+                <p><span>The simplest way to do your taxes ·</span> 4 min read</p>
+            </div>
+            <button class="mode-toggle" onclick="myFunction()"></button>
+            <div id="progress-bar"></div> 
+        </div>
+        <section id="case-study" class="scroll-point">
+            <div class="wrapper">
+                <p class="case-study__chapter">Introduction</p>
+                
+                <h3 class="case-study__h3">Client</h3>
+                <p class="case-study__paragraph">DGI, the government agency dedicated to tax control in Uruguay, needed a solution that allowed taxpayers to make their own income tax declaration.</p>
+                <h3 class="case-study__h3">Challenge</h3>
+                <p class="case-study__paragraph">Due to the heterogeneity of the taxpayers, the proposal had to be accessible (AA minimun), had to focus on usablitiy and be very intuitive.</p>
+                <p class="case-study__chapter">1. The concept</p>
+                <h2 class="case-study__h2">Reducing the users frustrations and decreasing the employees workload</h2>
+                <div class="img-wrapper__no-padding u-mb2">
+                    <source srcset="../../assets/img/dgi/propuesta.webp" type="image/webp">
+                    <img src="../../assets/img/dgi/propuesta.png" alt="">
+                </div>
+                <p class="case-study__paragraph">The concept behind this project was to create a super easy solution for everyone, a solution that would required as little user involvement as posible. That is why the design focused on a summary screen that presented the final amount to pay or collect, along with with the detail that led to that amount, so that in the majority of cases the user only has to confirm that data.</p>
+                <p class="case-study__paragraph">For the cases that need adding info or correcting numbers, the concept remained, as we build forms that auto calculated some values depending on the user's input.</p>
+                
+                <p class="case-study__chapter">2. Cards</p>
+                <h2 class="case-study__h2">Simplifying the complex by creating dynamic summary cards</h2>
+                <p class="case-study__paragraph">The summary screen design was solved with a set of cards, which show the breakdown of the final amount to be collected / paid, indicating the item, the quantity and the company to which they correspond.</p>
+                <p class="case-study__paragraph">Through these cards the users have access to the forms, in which they can edit the data already loaded by the DGI or complete missing information.</p>
+                <div class="u-mb3 aos-init aos-animate" data-aos="fade-up" data-aos-duration="6000">
+                    <picture>
+                        <source srcset="../../assets/img/dgi/cards.webp" type="image/webp">
+                        <img class="case-study__img" src="../../assets/img/dgi/cards.png" alt="">
+                    </picture>
+                </div>
+                <ol class="case-study__ol aos-init aos-animate" data-aos="fade-up" data-aos-duration="6000">
+                    <li><span>The first card is the result card, in charge of indicating the final balance to pay or collect.</span></li>
+                    <li><span>The other cards show the breakdown of that balance. In this case, the card shows that the user has two dependent incomes, one from the company Edipler SA and the other from the University of the Republic.</span></li>
+                    <li><span>The "View and edit" button is the one that provides access to the form for each item. All the data that is edited within that form will have an impact on the amount shown on the card.</span></li>
+                    <li><span>The items that present differences are shown with background colored cards accompanied by attention or error messages. These messages are located under the cards, indicating the adjustments to be made in order to send the statement.</span></li>
+                </ol>
+                <p class="case-study__chapter">3. Forms</p>
+                <h2 class="case-study__h2">Building intuitive forms that facilitate completion an data edition</h2>
+                <div class="img-wrapper">
+                    <picture>
+                        <img src="../../assets/img/dgi/forms.png">
+                    </picture>
+                </div>
+                <h3 class="case-study__h3">Fields</h3>
+                <p class="case-study__paragraph">Each item has its peculiarities, so each form is different. Many of the fields depende on manual entry, while others depend on the combination of 2 or more fields, so we decided to make them automatic and to look like the result of a tally.</p>
+                <div class="img-wrapper__no-padding">
+                    <picture>
+                        <source srcset="../../assets/img/dgi/campos.webp" type="image/webp">
+                        <img src="../../assets/img/dgi/campos.png" alt="">
+                    </picture>
+                </div>
+                <h3 class="case-study__h3">Navigation</h3>
+                <p class="case-study__paragraph">Once inside a form, there are two ways to navigate between them:</p>
+                <div class="img-wrapper">
+                    <picture>
+                        <source srcset="../../assets/img/dgi/navegacion-1.webp" type="image/webp">
+                        <img src="../../assets/img/dgi/navegacion-1.png" alt="">
+                    </picture>
+                </div>
+                <p class="caption u-mb5">Following a linear flow using the button "Confirm and go to [next form name]"</p>
+                <div class="img-wrapper">
+                    <picture>
+                        <source srcset="../../assets/img/dgi/navegacion-2.webp" type="image/webp">
+                        <img src="../../assets/img/dgi/navegacion-2.png" alt="">
+                    </picture>
+                </div>
+                <p class="caption">Navigate to any of the other forms through tabs</p>
+                <p class="case-study__paragraph">It was important that the users had an overview of everything, since some changes in one form affected data in another. That's why we decided to provide two options to give them more control.</p>
+                <h3 class="case-study__h3">Actions</h3>
+                <p class="case-study__paragraph">Each number entered corresponds to real money, so completing these fields is a stressful process. Also, this has the character of an affidavit, which differentiates it even more from a simple form. We took this into account from the beginning and that is why we include several actions to facilitate completion:</p>
+                <p class="case-study__paragraph">The users can confirm the changes and return to the summary screen (cards) or confirm and follow the flow of forms. They also can save their progress, at any moment, to continue the process on another time.</p>
+                <div class="img-wrapper__no-padding u-mb2">
+                    <picture>
+                        <source srcset="../../assets/img/dgi/acciones-1.webp" type="image/webp">
+                        <img src="../../assets/img/dgi/acciones-1.png" alt="">
+                    </picture>
+                </div>
+                <p class="case-study__paragraph">If the users modify data but make mistakes, there's the possibility of restoring the original data entered by DGI.</p>
+
+                <div class="case-study__highlight">
+                    <p class="u-mb0">In its first year of existence, 75% of the declarations were made through the site and calls and in-person queries were considerably reduced.</p>
+                </div>
+
+                <div class="case-study__shots">
+                    <p class="case-study__chapter text-center u-mb2">Shots</p>
+                    <picture>
+                        <source srcset="../../assets/img/dgi/shot-1.webp" type="image/webp">
+                        <img src="../../assets/img/dgi/shot-1.png" data-aos="fade-up" data-aos-delay="100" data-aos-duration="500" alt="">
+                    </picture>
+                    <div class="grid">
+                        <picture>
+                            <source srcset="../../assets/img/dgi/shot-2.webp" type="image/webp">
+                            <img src="../../assets/img/dgi/shot-2.png" alt="" class="aos-init aos-animate" data-aos="fade-right" data-aos-duration="6000">
+                        </picture>
+                        <picture>
+                            <source srcset="../../assets/img/dgi/shot-3.webp" type="image/webp">
+                            <img src="../../assets/img/dgi/shot-3.png" alt="" class="aos-init aos-animate" data-aos="fade-left" data-aos-duration="6000">
+                        </picture>
+                        <picture>
+                            <source srcset="../../assets/img/dgi/shot-4.webp" type="image/webp">
+                            <img src="../../assets/img/dgi/shot-4.png" alt="" class="aos-init aos-animate" data-aos="fade-right" data-aos-duration="6000">
+                        </picture>
+                        <picture>
+                            <source srcset="../../assets/img/dgi/shot-5.webp" type="image/webp">
+                            <img src="../../assets/img/dgi/shot-5.png" alt="" class="aos-init aos-animate" data-aos="fade-left" data-aos-duration="6000">
+                        </picture>
+                    </div>
+                </div>
+
+                <div class="case-study__navigator">
+                    <p>Next project</p>
+                    <a href="../devoto" class="u-mb0">A new Mobile First shopping experience</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div id="mini-footer">
+            <div class="wrapper">
+                <div>
+                    <p>Barcelona · 2021</p>
+                </div>
+                <div>
+                    <p>Write me at <a href="mailto:hola@ramiroandrade.com">hola@ramiroandrade.com</a></p>
+                </div>
+                <div class="links">
+                    <p class="u-mr1"><a href="https://www.linkedin.com/in/ramiroandradeguenzatti/" target="_blank" rel="noopener noreferrer">Linkedin</a></p>
+                    <p><a href="https://dribbble.com/ramiroandrade" target="_blank" rel="noopener noreferrer">Dribbble</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="menu__wrapper">
+        <span class='menu case-study'> 
+      <span class='hamburger'></span>
+        </span>
+        <div class="menu__content">
+            <ul>
+                <li> <a href='../../' class="menu__item">Home</a> </li>
+                <li> <a href='../../about' class="menu__item">About</a> </li>
+                <li> <a href='../' class="menu__item">Work</a> </li>
+                <!-- <li> <a href='../../blog' class="menu__item">Blog</a> </li> -->
+            </ul>
+            <p>Write me at <a href="mailto:hola@ramiroandrade.com">hola@ramiroandrade.com</a> or find me in <a href="https://www.linkedin.com/in/ramiroandradeguenzatti/" target="_blank" rel="noopener noreferrer">Linkedin</a> and <a href="https://dribbble.com/ramiroandrade" target="_blank" rel="noopener noreferrer">Dribbble</a>.</p>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="../../assets/js/scripts.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        const checkpoint = 700;
+        window.addEventListener("scroll", () => {
+        const currentScroll = window.pageYOffset;
+        if (currentScroll <= checkpoint) {
+            opacity = 1 - currentScroll / checkpoint;
+        } else {
+            opacity = 0;
+        }
+        document.querySelector("#hero-case-study").style.opacity = opacity;
+        });
+    </script>
+    <script>
+        let processScroll = () => {
+	    let docElem = document.documentElement, 
+		docBody = document.body,
+		scrollTop = docElem['scrollTop'] || docBody['scrollTop'],
+    	scrollBottom = (docElem['scrollHeight'] || docBody['scrollHeight']) - window.innerHeight,
+		scrollPercent = scrollTop / scrollBottom * 100 + '%';
+	    document.getElementById("progress-bar").style.setProperty("--scrollAmount", scrollPercent);	
+        }
+        document.addEventListener('scroll', processScroll);
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-47955547-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-47955547-1');
+    </script>
+</body>
+
+</html>
