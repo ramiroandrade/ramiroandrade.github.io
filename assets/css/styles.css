@@ -132,7 +132,7 @@ a {
     margin-left: .5rem;
     width: 10px;
     height: 12px;
-    margin-top: 4px;
+    margin-top: 3px;
     display: inline-block;
     position: absolute;
     -webkit-transition: all .3s;
@@ -655,33 +655,24 @@ opacity: .8;
 	height: 4px;
 }
 /* Toggle Light mode */
-.light-mode .mode-toggle:after {
-    background: url(../img/dark.svg) center center no-repeat;
-    -webkit-transition: all .6s;
-    -o-transition: all .6s;
-    transition: all .6s;
-}
 .mode-toggle {
-    padding: 0 30px;
+    padding: 0;
     border: none;
-    text-align: left;
     width: 30px;
+    height: 30px;
     color: #FFF;
     background-color: transparent;
-    -webkit-transition: all .3s;
-    -o-transition: all .3s;
-    transition: all .3s;
     position: absolute;
-    right: 20px;
-    top: 2px;
+    right: 30px;
+    top: 10px;
 }
 .mode-toggle:after {
     content: "";
     background: url(../img/light.svg) center center no-repeat;
     width: 24px;
     height: 24px;
-    top: 11px;
-    left: 18px;
+    top: 2px;
+    left: 3px;
     position: absolute;
     -webkit-transition: all .6s;
     -o-transition: all .6s;
@@ -1571,9 +1562,6 @@ body.light-mode {
     background-color: transparent;
 }
 
-
-
-
 .scroll-down {
     position: absolute;
     top: -16px;
@@ -1609,4 +1597,3 @@ body.light-mode {
     border: 2px solid white;
     border-width: 0px 0 2px 2px;
 }
-
