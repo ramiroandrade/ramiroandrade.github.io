@@ -674,15 +674,9 @@ opacity: .8;
     top: 2px;
     left: 3px;
     position: absolute;
-    -webkit-transition: all .6s;
-    -o-transition: all .6s;
-    transition: all .6s;
 }
 .light-mode .mode-toggle:after {
     background: url(../img/dark.svg) center center no-repeat;
-    -webkit-transition: all .6s;
-    -o-transition: all .6s;
-    transition: all .6s;
 }
 .case-study__h2 {
     max-width: 650px;
