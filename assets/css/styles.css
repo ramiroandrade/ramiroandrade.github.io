@@ -115,7 +115,7 @@ a {
     background: #002DCA;
     color: #FFF;
     text-transform: uppercase;
-    padding: 17px 45px 13px 35px;
+    padding: 17px 55px 13px 35px;
     border-radius: 6px;
     -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
@@ -125,6 +125,7 @@ a {
     -o-transition: all .3s;
     transition: all .3s;
     -moz-transition: all 0.3s;
+    position: relative;
 }
 .button--primary:after {
     content: "";
@@ -132,9 +133,9 @@ a {
     margin-left: .5rem;
     width: 10px;
     height: 12px;
-    margin-top: 3px;
     display: inline-block;
     position: absolute;
+    top: 20px;
     -webkit-transition: all .3s;
     -o-transition: all .3s;
     transition: all .3s;
@@ -1385,11 +1386,11 @@ body.no-scroll main {
         background: #0055FF;
     }
     .button--primary:hover:after {
-        margin-left: 1rem;
+        transform: translateX(6px);
     }
     .button--secondary:hover:after, .button--link:hover:after, .blog-card:hover .button--link:after {
         background: url('../img/icn-button-link.svg') center center no-repeat;
-        margin-left: 1rem;
+        transform: translateX(6px);
     }
     #hero {
         height: 580px
