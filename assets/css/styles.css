@@ -136,6 +136,7 @@ a {
     display: inline-block;
     position: absolute;
     top: 20px;
+    vertical-align: middle;
     -webkit-transition: all .3s;
     -o-transition: all .3s;
     transition: all .3s;
