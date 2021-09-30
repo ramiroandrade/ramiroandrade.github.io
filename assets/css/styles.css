@@ -134,9 +134,9 @@ a {
     width: 10px;
     height: 12px;
     display: inline-block;
-    position: absolute;
-    top: 20px;
-    vertical-align: middle;
+    /*position: absolute;
+    top: 20px;*/
+    vertical-align: baseline;
     -webkit-transition: all .3s;
     -o-transition: all .3s;
     transition: all .3s;
