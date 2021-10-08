@@ -485,7 +485,7 @@ opacity: .8;
 .about__list__wrapper {
     background-color: #1c1c1c;
     border-radius: 10px;
-    padding: 60px 50px;
+    padding: 40px 30px;
     margin-bottom: 3rem;
     position: relative;
 }
@@ -564,8 +564,7 @@ opacity: .8;
     radial-gradient(at 17% 37%, hsla(239,31%,35%,1) 0, transparent 56%),  
     radial-gradient(at 48% 55%, hsla(222,47%,24%,1) 0, transparent 100%),  
     radial-gradient(at 25% 36%, hsla(255,25%,62%,1) 0, transparent 62%),  
-    radial-gradient(at 94% 48%, hsla(298,26%,52%,1) 0, transparent 78%);
-    
+    radial-gradient(at 94% 48%, hsla(298,26%,52%,1) 0, transparent 78%); 
 }
 #hero-case-study.devoto {
     background-color: #131313;
@@ -589,6 +588,9 @@ opacity: .8;
     radial-gradient(at 80% 100%, hsla(27,100%,50%,1) 0, transparent 79%),  
     radial-gradient(at 80% 50%, hsla(24,88%,69%,1) 0, transparent 50%),  
     radial-gradient(at 0% 100%, hsla(335,26%,34%,1) 0, transparent 85%);
+}
+#hero-case-study.gubuy {
+    background: radial-gradient(50% 50% at 50% 50%, #245992 0%, rgba(36, 89, 146, 0.58) 100%) #131313;
 }
 #hero-case-study h1 {
     font-size: 2.4rem;
@@ -1302,6 +1304,9 @@ body.no-scroll main {
     .about__columns .about__page {
         width: 48%;
         padding: 80px;
+    }
+    .about__list__wrapper {
+        padding: 60px 50px;
     }
     /* Home Footer */
     #contact p {
