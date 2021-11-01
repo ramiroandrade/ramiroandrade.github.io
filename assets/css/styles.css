@@ -176,6 +176,8 @@ a {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    /*background: url('../img/hero-bgn.png') center center no-repeat;
+    background-size: cover;*/
 }
 #hero h1 {
     font-family: 'Open Sans';
