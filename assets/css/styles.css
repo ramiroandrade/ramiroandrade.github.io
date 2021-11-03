@@ -460,12 +460,16 @@ opacity: .8;
     padding: 0 25px 80px 25px;
     max-width: 700px;
 }
+#about .wrapper p {
+    font-size: 1.125rem;
+    line-height: 1.8rem;
+}
 #about .wrapper img {
     max-width: 120px;
     margin: 0 auto 2rem auto;
 }
 #about h2 {
-    margin: 0 0 .85rem 0;
+    margin: 0 0 1.5rem 22px;
 }
 .about__list__wrapper .emoji {
     position: absolute;
@@ -1309,6 +1313,9 @@ body.no-scroll main {
     }
     .about__list__wrapper {
         padding: 60px 50px;
+    }
+    #about h2 {
+        margin: 0 0 .85rem 5px;
     }
     /* Home Footer */
     #contact p {
