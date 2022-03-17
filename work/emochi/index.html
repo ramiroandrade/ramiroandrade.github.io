@@ -6,7 +6,7 @@
     <title>Emochi | Ramiro Andrade · Digital Product Designer</title>
     <meta property="og:site_name" content="Ramiro Andrade - Digital Product Designer" />
     <meta property="og:title" content="Ramiro Andrade - Digital Product Designer" />
-    <meta name="description" content="Ramiro is a product designer who creates digital experiences with focus on usability and accessibility.">
+    <meta name="description" content="Ramiro is a digital product designer who enjoys creating solutions that simplify the complex.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
@@ -30,7 +30,6 @@
                 <img src="../../assets/img/emochi/img-emochi.png" alt="">
             </picture>
             <div class="case-study__info-wrapper">
-                <span class="scroll-down"></span>
                 <div class="case-study__info">
                     <div>
                         <h4>Project type</h4>
@@ -486,8 +485,10 @@
                 </div>
                 <p class="caption">Emochi's logo designed by me</p>
                 <div class="case-study__navigator">
-                    <p>Next project</p>
-                    <a href="../dgi" class="u-mb0">The simplest way to do your taxes</a>
+                    <a href="../dgi" class="card">
+                        <span>Next project</span>
+                        <p class="u-mb0">The simplest way to do your taxes</p>
+                    </a>
                 </div>
             </div>
         </section>
@@ -497,7 +498,7 @@
         <div id="mini-footer">
             <div class="wrapper">
                 <div>
-                    <p>Barcelona · 2021</p>
+                    <p>Barcelona · 2022</p>
                 </div>
                 <div>
                     <p>Write me at <a href="mailto:hola@ramiroandrade.com">hola@ramiroandrade.com</a></p>
@@ -553,6 +554,16 @@
 	    document.getElementById("progress-bar").style.setProperty("--scrollAmount", scrollPercent);	
         }
         document.addEventListener('scroll', processScroll);
+    </script>
+    <script>
+        $(".card").tilt({
+            perspective: 1000,
+            easing: "cubic-bezier(.03,.98,.52,.99)",
+            speed: 1200,
+            glare: true,
+            maxGlare: 0.2,
+            scale: 1.1
+        });
     </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-47955547-1"></script>

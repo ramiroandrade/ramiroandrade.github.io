@@ -57,7 +57,7 @@ ol li {
 }
 p {
     margin-top: 0;
-    line-height: 1.8rem;
+    line-height: 2rem;
     font-weight: 300;
     color: #E3E3E3;
 }
@@ -66,7 +66,6 @@ p.destacado {
 }
 /* Títulos */
 h1 {
-    font-family: 'Product Sans Black', sans-serif;
     font-size: 2.4rem;
     margin-top: 0;
 }
@@ -96,9 +95,9 @@ h3 {
 a {
     color: inherit;
     text-decoration: underline;
-    text-decoration-color: #0055FF;
+    text-decoration-color: rgba(255, 255, 255, 0.65);
     text-underline-offset: 2px;
-    text-decoration-thickness: 2px;
+    text-decoration-thickness: 1px;
     transition: all ease .2s;
 }
 .button--link {
@@ -176,31 +175,30 @@ a {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    /*background: url('../img/hero-bgn.png') center center no-repeat;
-    background-size: cover;*/
+    background: url('../img/hero-bgn.png') center center no-repeat;
+    background-size: cover;
 }
 #hero h1 {
-    font-family: 'Open Sans';
-    font-weight: 400;
-    font-size: 2.4rem;
-    line-height: 2.6rem;
-    letter-spacing: -3px;
+    font-family: 'Product Sans Light', sans-serif;
+    font-weight: 300;
+    font-size: 2.1rem;
+    line-height: 2.25rem;
+    letter-spacing: -1px;
     margin: 0 auto;
 }
-#hero h1 a{
-    text-underline-offset: 7px;
-    text-decoration-thickness: 3px;
-    text-decoration-color: #6C9DFF;
-}
-#hero p {
-    font-size: 1.6rem;
-    line-height: 2rem;
+#hero p.name {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
     font-family: 'Product Sans Light', sans-serif;
     text-transform: uppercase;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
-#hero p span {
-    color: #6C9DFF;
+#hero p.work {
+    font-size: 1rem;
+    line-height: 1.4rem;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 0;
+    margin-top: 20px;
 }
 #hero .wrapper {
     display: -webkit-box;
@@ -257,17 +255,19 @@ opacity: .8;
     font-family: 'Product Sans Light';
     font-weight: 300;
     text-transform: uppercase;
-    font-size: 2.25rem;
+    font-size: 2rem;
     margin: 0 0 15px 0;
-    color: #d0d0d0;
+    color: #B3BCC7;
 }
 #subhero p {
-    font-weight: 400;
-    font-size: 2.4rem;
-    line-height: 2.6rem;
-    letter-spacing: -3px;
+    font-family: 'Product Sans Light';
+    font-weight: 300;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    letter-spacing: -1px;
     margin: 0 auto;
     max-width: 780px;
+    color: #FFF;
 }
 /* Estilos generales de secciones */
 #projects {
@@ -280,8 +280,15 @@ opacity: .8;
     padding: 0 20px;
 }
 /* Snippet Projecto */
+.card {
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+    background: #1d1d1d;
+    border-radius: 20px;
+    margin: 30px 0
+}
 .project {
-    margin: 80px 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -295,23 +302,25 @@ opacity: .8;
     width: 100%;
 }
 .project__role span {
-    font-family: 'Product Sans Bold';
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
     font-size: 1rem;
     display: inline-block;
     color: #6C9DFF;
     margin: 1rem 1rem 1rem 0;
 }
 .project__title {
-    font-family: 'Product Sans Black';
+    font-family: 'Product Sans Light';
     margin-top: 0;
-    margin-bottom: 1rem;
+    margin-bottom: 10px;
     font-size: 2rem;
     letter-spacing: -1px;
     line-height: 2.2rem;
+    color: #FFF;
 }
 .project__description {
     line-height: 1.6rem;
-    margin-bottom: 1.875rem;
+    margin-bottom: 0;
     font-weight: 300;
     font-size: 18px;
 }
@@ -319,7 +328,7 @@ opacity: .8;
     border-radius: 10px;
     display: inline-block;
     overflow: hidden;
-    height: 356px;
+    margin-bottom: 1rem;
 }
 .project__img img {
     margin: 0 auto;
@@ -371,8 +380,8 @@ opacity: .8;
     background-color: #1c1c1c;
 }
 /* Sección About de la home */
-#mini-about{
-    margin: 150px 0;
+#mini-about {
+    padding: 20px;
 }
 #mini-about .wrapper {
     display: -webkit-box;
@@ -385,22 +394,34 @@ opacity: .8;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    max-width: 900px;
+    max-width: 90%;
+    justify-content: space-evenly;
+    background: #1d1d1d;
+    padding: 20px;
+    border-radius: 20px;
+    text-decoration: none;
 }
-#mini-about .wrapper h2, #mini-about .wrapper .button--link  {
+#mini-about .wrapper h2 {
     text-align: center;
+    font-size: 1.65rem;
+    margin-bottom: 10px;
+}
+.mini-about__img {
+    overflow: hidden;
+    border-radius: 20px;
 }
 #mini-about .wrapper img  {
     max-width: 140px;
     height: auto;
     margin-bottom: 30px;
+    transition: .6s all;
 }
 #mini-about p {
     max-width: 600px;
-    text-align: center;
+    text-align: left;
     font-weight: 300;
     font-size: 1.125rem;
-    margin-bottom: 30px;
+    margin-bottom: 0;
 }
 #mini-about a {
     display: block;
@@ -443,7 +464,7 @@ opacity: .8;
     max-width: 1000px;
     margin: 0 auto;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     height: 140px;
@@ -462,7 +483,7 @@ opacity: .8;
 }
 #about .wrapper p {
     font-size: 1.125rem;
-    line-height: 1.8rem;
+    line-height: 2rem;
 }
 #about .wrapper img {
     max-width: 120px;
@@ -473,14 +494,13 @@ opacity: .8;
 }
 .about__list__wrapper .emoji {
     position: absolute;
-    left: -2rem;
+    left: -1rem;
     top: 2rem;
     font-size: 5rem;
     display: none;
 }
 .lists {
     padding: 30px 0;
-    margin-bottom: 80px;
 }
 #about .lists .wrapper {
     max-width: 800px;
@@ -599,10 +619,12 @@ opacity: .8;
     background: radial-gradient(50% 50% at 50% 50%, #245992 0%, rgba(36, 89, 146, 0.58) 100%) #131313;
 }
 #hero-case-study h1 {
-    font-size: 2.4rem;
+    font-family: 'Product Sans Light';
+    font-weight: 300;
+    font-size: 2rem;
     line-height: 2.4rem;
-    letter-spacing: -2px;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+    letter-spacing: -1px;
+
 }
 #hero-case-study span {
     font-size: 1.4rem;
@@ -660,8 +682,8 @@ opacity: .8;
 }
 #progress-bar {
 	--scrollAmount: 0%;
-	background-image: linear-gradient(120deg, #6C9DFF 0%, #002DCA 100%);
-    /*background-color: rgba(255, 255, 255, 0.2);*/
+	/*background-image: linear-gradient(120deg, #6C9DFF 0%, #002DCA 100%);*/
+    background: #222;
 	width: var(--scrollAmount);
 	height: 4px;
 }
@@ -693,10 +715,8 @@ opacity: .8;
     max-width: 650px;
     margin: 0 auto 2rem auto;
     font-size: 1.6rem;
-    line-height: 2rem;
+    line-height: 1.8rem;
     font-weight: 400;
-    font-family: 'Open Sans';
-    letter-spacing: -1px;
     text-transform: none;
 }
 .case-study__h3 {
@@ -918,24 +938,21 @@ opacity: .8;
     line-height: 2rem;
 }
 .case-study__navigator {
-    background: rgba(255, 255, 255, 0.05);
     color: #FFF;
-    border-radius: 10px;
-    border: 1px solid #E3E3E3;
     margin: 140px auto 3rem auto;
-    padding: 40px 20px;
     text-align: center;
     max-width: 650px;
+    font-family: 'Product Sans Light';
+}
+.case-study__navigator span {
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    display: block;
 }
 .case-study__navigator p {
-    font-size: 1rem;
-    font-family: 'Product Sans Light';
-    text-transform: uppercase;
-    margin-bottom: 0;
-}
-.case-study__navigator a {
     font-size: 1.25rem;
-    letter-spacing: -1px;
+    line-height: 1.4rem;
 }
 #case-study .about__list {
     max-width: 650px;
@@ -1120,21 +1137,36 @@ body.no-scroll main {
         line-height: 3.5rem;
         margin-bottom: 0;
     }
-    #hero p {
+    #hero p.name {
         font-size: 1.6rem;
+    }
+    .hero__wrapper {
+        max-width: 780px;
     }
     /* Subhero */
     #subhero {
         padding-top: 180px;
         margin-bottom: 180px;
     }
-    .hero__wrapper {
-        max-width: 780px;
+    #subhero p {
+        font-size: 2.25rem;
+        line-height: 2.5rem;
+        max-width: 700px;
+    }
+    /* Project snippet */
+    .card {
+        padding: 50px;
+        margin: 80px 0;
+    }
+    .project__title {
+        margin-bottom: 1.8rem;
+    }
+    .project__img img {
+        margin-bottom: 0;
     }
     /* Snippet Proyecto */
     #last-projects .wrapper, #latest-blogpost .wrapper {
         max-width: 1000px;
-        padding: 0 60px;
     }
     .project {
         -webkit-box-orient: horizontal;
@@ -1156,7 +1188,7 @@ body.no-scroll main {
         max-width: 450px;
     }
     .project__img img {
-        max-width: 356px;
+        max-width: 300px;
         height: auto;
         margin-top: 0;
     }
@@ -1192,8 +1224,7 @@ body.no-scroll main {
         font-size: 4rem;
         line-height: 4rem;
         margin-bottom: 40px;
-        letter-spacing: -3px;
-        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+        letter-spacing: -2px;
     }
     /* Post */
     #hero-post {
@@ -1235,8 +1266,8 @@ body.no-scroll main {
     }
     .case-study__h2 {
         font-size: 2.25rem;
-        line-height: 2.75rem;
-        letter-spacing: -2px;
+        line-height: 2.5rem;
+        letter-spacing: -1px;
     }
     .case-study__chapter {
         font-size: 1.5rem;
@@ -1284,12 +1315,8 @@ body.no-scroll main {
         text-align: center;
         padding: 50px 80px;
     }
-    .case-study__navigator {
-        padding: 50px 100px;
-        max-width: 650px;
-    }
     .case-study__navigator p {
-        font-size: 1.125rem;
+        font-size: 2rem;
     }
     .case-study__navigator a {
         font-size: 1.5rem;
@@ -1312,11 +1339,31 @@ body.no-scroll main {
         width: 48%;
         padding: 80px;
     }
-    .about__list__wrapper {
-        padding: 60px 50px;
-    }
     #about h2 {
         margin: 0 0 .85rem 5px;
+    }
+    /* About Home */
+    #mini-about .wrapper {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        max-width: 80%;
+        max-width: 900px;
+        justify-content: space-evenly;
+        padding: 80px;
+    }
+    .mini-about__img {
+        margin-right: 30px;
+    }
+    #mini-about .wrapper img  {
+        margin-bottom: 0;
+    }
+    #mini-about .wrapper h2 {
+        text-align: left;
     }
     /* Home Footer */
     #contact p {
@@ -1341,8 +1388,8 @@ body.no-scroll main {
     }
 }
 @media screen and (min-width: 1000px) {
-    #last-projects .wrapper, #latest-blogpost .wrapper {
-        max-width: 1000px;
+    #last-projects .wrapper, #latest-blogpost .wrapper, #work .wrapper {
+        max-width: 1020px;
         padding: 0;
     }
     .project {
@@ -1361,7 +1408,7 @@ body.no-scroll main {
         letter-spacing: -4px;
     }
     .project__role span {
-        margin: 0 1rem 2.5rem 0;
+        margin: 0 1rem 2rem 0;
     }
     #hero-case-study {
         color: #FFF;
@@ -1408,6 +1455,39 @@ body.no-scroll main {
         background: url('../img/icn-button-link.svg') center center no-repeat;
         transform: translateX(6px);
     }
+    .card{
+        position: relative;
+        overflow: hidden;
+    }
+    .card:hover .card-overlay{
+        opacity: 1;
+        transform: scale(1);
+    }
+    .card-overlay{
+        position: absolute;
+        background: rgba(19, 19, 19, 0.75);
+        width: 100%;
+        height: 100%;
+        top: 0;
+        transform: scale(1.3);
+        opacity: 0;
+        transition: transform .4s ease 0s;
+    }
+    .card-overlay span{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-weight: bold;
+        font-size: 3em;
+        color: #fff;
+        letter-spacing: -2px;
+        font-family: 'Product Sans Black', sans-serif;
+    }
+    .card:hover img{
+        transform: scale(1.1);
+    }
+    /* Hero */
     #hero {
         height: 580px
     }
@@ -1415,15 +1495,19 @@ body.no-scroll main {
         padding: 0;
     }
     #hero h1 {
-        font-size: 3rem;
+        font-size: 3.625rem;
         line-height: 4rem;
         /*text-align: center;*/
-        letter-spacing: -4px;
+        letter-spacing: -2px;
     }
-    #hero p {
-        font-size: 2.25rem;
+    #hero p.name {
+        font-size: 1.8rem;
         line-height: 2.5rem;
         letter-spacing: 1px;
+    }
+    #hero p.work {
+        font-size: 1.2rem;
+        line-height: 1.6rem;
     }
     #subhero h1 {
         font-size: 2.25rem;
@@ -1434,7 +1518,7 @@ body.no-scroll main {
         line-height: 3.2rem;
         letter-spacing: -3px;
     }
-    #contact p a, .menu__content p a, #about p a, #case-study a, #mini-footer a, #hero h1 a {
+    #contact p a, .menu__content p a, #about p a, .case-study__paragraph a, #mini-footer a, #hero p a {
         border-bottom: none;
         display: inline-block;
         -webkit-transform: perspective(1px) translateZ(0);
@@ -1448,13 +1532,12 @@ body.no-scroll main {
     .menu__wrapper .menu.case-study {
         top: 0;
     }
-    .menu__item::before, #contact p a::before, .menu__content p a::before, #about p a::before, #case-study a::before, #mini-footer a::before, #hero h1 a::before {
+    .menu__item::before, #contact p a::before, .menu__content p a::before, #about p a::before, .case-study__paragraph a::before, #mini-footer a::before, #hero p a::before {
         content: "";
         position: absolute;
-        z-index: -1;
         left: 0;
         right: 100%;
-        bottom: 0;
+        bottom: 3px;
         background: #0055ff;
         height: 4px;
         -webkit-transition-property: right;
@@ -1470,7 +1553,7 @@ body.no-scroll main {
     #hero h1 a::before {
         background: #6C9DFF;
     }
-    .menu__item:hover:before, .menu__item:focus:before, .menu__item:active:before, #contact p a:hover:before, #contact p a:focus:before, #contact p a:active:before, .menu__content p a:hover:before, .menu__content p a:focus:before, .menu__content p a:active:before, #about p a:hover:before, #about p a:focus:before, #about p a:active:before, #case-study a:hover:before, #case-study a:focus:before, #case-study a:active:before, #mini-footer a:hover:before, #mini-footer a:focus:before, #mini-footer a:active:before, #hero h1 a:hover:before, #hero h1 a:focus:before, #hero h1 a:active:before {
+    .menu__item:hover:before, .menu__item:focus:before, .menu__item:active:before, #contact p a:hover:before, #contact p a:focus:before, #contact p a:active:before, .menu__content p a:hover:before, .menu__content p a:focus:before, .menu__content p a:active:before, #about p a:hover:before, #about p a:focus:before, #about p a:active:before, .case-study__paragraph a:hover:before, .case-study__paragraph a:focus:before, .case-study__paragraph a:active:before, #mini-footer a:hover:before, #mini-footer a:focus:before, #mini-footer a:active:before, #hero p a:hover:before, #hero p a:focus:before, #hero p a:active:before {
         right: 0;
     }
     .blog-card:hover {
@@ -1508,9 +1591,9 @@ body.light-mode {
 .light-mode #case-study .case-study__quote p, .light-mode #post .case-study__quote p {
     color: #FFF;
 }
-.light-mode .case-study__paragraph, .light-mode .caption, .light-mode .case-study__highlight p, .light-mode .case-study__ol li span {
+/*.light-mode .case-study__paragraph, .light-mode .caption, .light-mode .case-study__highlight p, .light-mode .case-study__ol li span {
     font-weight: 400;
-}
+}*/
 .light-mode .img-wrapper, .light-mode .img-wrapper__no-padding, .light-mode .case-study__shots img, .light-mode .vid-wrapper {
     background-color: #F0F2F5;
 }
@@ -1534,6 +1617,12 @@ body.light-mode {
 }
 .light-mode #mini-footer {
     border-top: solid 1px #e6e6e6;
+}
+.light-mode a {
+    text-decoration-color: rgba(51, 51, 51, 0.65);
+}
+.light-mode .case-study__navigator .card {
+    background: #F0F2F5;
 }
 /* Utilities */
 .text-center {

@@ -48,6 +48,13 @@
                 </div>
             </div>
         </section>
+        <div class="case-study__header">
+            <div class="wrapper">
+                <p><span>Designing solutions for airline passengers ·</span> 3 min read</p>
+            </div>
+            <button class="mode-toggle" onclick="myFunction()"></button>
+            <div id="progress-bar"></div> 
+        </div>
         <section id="case-study" class="scroll-point">
             
             <div class="wrapper">
@@ -102,34 +109,33 @@
 
     <footer>
         <div id="mini-footer">
-            <button class="mode-toggle" onclick="myFunction()">Turn light</button>
             <div class="wrapper">
-                <div>
-                    <p>Barcelona · 2021</p>
-                </div>
-                <div>
-                    <p>You can write me at <a href="mailto:hola@ramiroandrade.com">hola@ramiroandrade.com</a></p>
-                </div>
                 <div class="links">
-                    <p class="u-mr1"><a href="https://www.linkedin.com/in/ramiroandradeguenzatti/">Linkedin</a></p>
-                    <p><a href="https://dribbble.com/ramiroandrade">Dribbble</a></p>
+                    <p class="u-mr1"><a href="https://www.linkedin.com/in/ramiroandradeguenzatti/" target="_blank" rel="noopener noreferrer">Linkedin</a></p>
+                    <p><a href="https://dribbble.com/ramiroandrade" target="_blank" rel="noopener noreferrer">Dribbble</a></p>
+                </div>
+                <div>
+                    <p>Write me at <a href="mailto:hola@ramiroandrade.com">hola@ramiroandrade.com</a></p>
+                </div>
+                <div>
+                    <p>Barcelona · 2022</p>
                 </div>
             </div>
         </div>
     </footer>
 
     <div class="menu__wrapper">
-        <span class='menu'> 
+        <span class='menu case-study'> 
       <span class='hamburger'></span>
         </span>
         <div class="menu__content">
             <ul>
-                <li> <a href='/' class="menu__item">Home</a> </li>
-                <li> <a href='./about' class="menu__item">About</a> </li>
-                <li> <a href='./work' class="menu__item">Work</a> </li>
-                <li> <a href='./blog' class="menu__item">Blog</a> </li>
+                <li> <a href='../../' class="menu__item">Home</a> </li>
+                <li> <a href='../../about/' class="menu__item">About</a> </li>
+                <li> <a href='../' class="menu__item">Work</a> </li>
+                <!-- <li> <a href='./blog' class="menu__item">Blog</a> </li> -->
             </ul>
-            <p>You can write me at <a href="mailto:hola@ramiroandrade.com">hola@ramiroandrade.com</a> or find me in <a href="https://www.linkedin.com/in/ramiroandradeguenzatti/">Linkedin</a> and <a href="https://dribbble.com/ramiroandrade">Dribbble</a>.</p>
+            <p>You can write me at <a href="mailto:hola@ramiroandrade.com">hola@ramiroandrade.com</a> or find me in <a href="https://www.linkedin.com/in/ramiroandradeguenzatti/" target="_blank" rel="noopener noreferrer">Linkedin</a> and <a href="https://dribbble.com/ramiroandrade" target="_blank" rel="noopener noreferrer">Dribbble</a>.</p>
         </div>
     </div>
 
@@ -150,6 +156,17 @@
         }
         document.querySelector("#hero-case-study").style.opacity = opacity;
         });
+    </script>
+    <script>
+        let processScroll = () => {
+	    let docElem = document.documentElement, 
+		docBody = document.body,
+		scrollTop = docElem['scrollTop'] || docBody['scrollTop'],
+    	scrollBottom = (docElem['scrollHeight'] || docBody['scrollHeight']) - window.innerHeight,
+		scrollPercent = scrollTop / scrollBottom * 100 + '%';
+	    document.getElementById("progress-bar").style.setProperty("--scrollAmount", scrollPercent);	
+        }
+        document.addEventListener('scroll', processScroll);
     </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-47955547-1"></script>
