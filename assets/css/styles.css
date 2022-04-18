@@ -1507,7 +1507,7 @@ body.no-scroll main {
     }
     #hero p.work {
         font-size: 1.2rem;
-        line-height: 1.6rem;
+        line-height: 2rem;
     }
     #subhero h1 {
         font-size: 2.25rem;
@@ -1585,7 +1585,7 @@ body.no-scroll main {
 body.light-mode {
     background-color: #FFF;
 }
-.light-mode #case-study p, .light-mode #post p, .light-mode #mini-footer p {
+.light-mode #case-study p, .light-mode #post p, .light-mode #mini-footer p, .light-mode .about__list li span {
     color: #333;
 }
 .light-mode #case-study .case-study__quote p, .light-mode #post .case-study__quote p {
