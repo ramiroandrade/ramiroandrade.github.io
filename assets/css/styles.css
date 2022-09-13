@@ -999,14 +999,14 @@ opacity: .8;
 }
 /* UI Post */
 #shot-post {
-    color: #FFF;
-    padding: 120px 0 0 0;
+    padding: 80px 0 0 0;
     height: 450px;
     background-color: #23262A;
 }
 #shot-post .wrapper {
     max-width: 780px;
     margin: 0 auto;
+    padding: 0 20px;
 }
 #shot-post h1 {    
     font-family: 'Product Sans Bold', sans-serif;
@@ -1026,8 +1026,27 @@ opacity: .8;
 .shot__cover {    
     max-width: 90%;
     border-radius: 6px;
-    margin: -100px auto 0 auto;
+    margin: -120px auto 0 auto;
     margin-bottom: 60px;
+}
+.back-button {
+    margin-bottom: 40px;
+}
+.back-button input {
+    display: block;
+    width: 70px;
+    height: 20px;
+    cursor: pointer;
+    font-family: 'Product Sans Light', sans-serif;
+    color: #E3E3E3;
+    border: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    background-image: url('../img/icn-back.svg');
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: 0 2px;
+    padding: 0 0 0 24px;
 }
 
 #shot-page .img-wrapper {
@@ -1599,7 +1618,7 @@ body.no-scroll main {
     }
     /* Hero */
     #hero {
-        height: 580px
+        height: 520px
     }
     #hero .wrapper {
         padding: 0;
@@ -1739,7 +1758,7 @@ body.light-mode {
     text-align: center;
 }
 .wrapper {
-    padding: 0 30px;
+    padding: 0 20px;
     max-width: 1060px;
     margin: 0 auto;
 }
