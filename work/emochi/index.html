@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -18,18 +18,26 @@
     <meta name="theme-color" content="#131313" />
 </head>
 
-<body>
+<body class="light-mode">
     <main>
-        <section id="hero-case-study" class="emochi">
+        <div class="case-study__header">
             <div class="wrapper">
-                <span>Emochi</span>
-                <h1>An emotionally intelligent tamagotchi</h1>
+                <p><span>An emotionally intelligent tamagotchi ·</span> 10 min read</p>
             </div>
+            <button class="mode-toggle" onclick="myFunction()"></button>
+            <div id="progress-bar"></div> 
+        </div>
+        <section id="hero-case-study" class="emochi">
             <picture>
                 <source srcset="" type="image/webp">
                 <img src="../../assets/img/emochi/img-emochi.png" alt="">
             </picture>
-            <div class="case-study__info-wrapper">
+            <div class="wrapper">
+                <span class="client">Emochi</span>
+                <h1>An emotionally <br> intelligent tamagotchi</h1>
+                <p>Emochi is my team's final project for the Master’s Degree in Digital Experiences Design.</p>
+            </div>
+            <!-- <div class="case-study__info-wrapper">
                 <div class="case-study__info">
                     <div>
                         <h4>Project type</h4>
@@ -44,15 +52,8 @@
                         <p>Figma</p>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </section>
-        <div class="case-study__header">
-            <div class="wrapper">
-                <p><span>An emotionally intelligent tamagotchi ·</span> 10 min read</p>
-            </div>
-            <button class="mode-toggle" onclick="myFunction()"></button>
-            <div id="progress-bar"></div> 
-        </div>
         <section id="case-study" class="scroll-point">
             <div class="wrapper">
                 <p class="case-study__chapter">Introduction</p>
@@ -504,7 +505,7 @@
                     <p>Write me at <a href="mailto:hola@ramiroandrade.com">hola@ramiroandrade.com</a></p>
                 </div>
                 <div>
-                    <p>Barcelona · 2022</p>
+                    <p>Barcelona · 2023</p>
                 </div>
             </div>
         </div>

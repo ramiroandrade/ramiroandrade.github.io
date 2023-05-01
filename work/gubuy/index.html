@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -18,19 +18,26 @@
     <meta name="theme-color" content="#131313" />
 </head>
 
-<body>
+<body class="light-mode">
     <main>
-        
-        <section id="hero-case-study" class="gubuy">
+        <div class="case-study__header">
             <div class="wrapper">
-                <span>GUBUY</span>
-                <h1>Building a government's <br/> design system</h1>
-                <picture>
-                    <source srcset="" type="image/webp">
-                    <img src="../../assets/img/gubuy/img-gubuy.png">
-                </picture>
+                <p><span>Building a design system for a government ·</span> 7 min read</p>
             </div>
-            <div class="case-study__info-wrapper">
+            <button class="mode-toggle" onclick="myFunction()"></button>
+            <div id="progress-bar"></div> 
+        </div>
+        <section id="hero-case-study" class="gubuy">
+            <picture>
+                <!-- <source srcset="" type="image/webp"> -->
+                <img src="../../assets/img/gubuy/img-gubuy.png">
+            </picture>
+            <div class="wrapper">
+                <span class="client">GUBUY</span>
+                <h1>Building a government's <br/> design system</h1>
+                <p>A consistent and unified language for the online interactions between uruguayan citizens and the state dependencies.</p>
+            </div>
+            <!-- <div class="case-study__info-wrapper">
                 <div class="case-study__info">
                     <div>
                         <h4>Role</h4>
@@ -45,15 +52,8 @@
                         <p>Component Design, Front-End</p>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </section>
-        <div class="case-study__header">
-            <div class="wrapper">
-                <p><span>Building a design system for a government ·</span> 7 min read</p>
-            </div>
-            <button class="mode-toggle" onclick="myFunction()"></button>
-            <div id="progress-bar"></div> 
-        </div>
         <section id="case-study" class="scroll-point">
             <div class="wrapper">
                 <p class="case-study__chapter">Introduction</p>
@@ -197,7 +197,7 @@
                     <p>Write me at <a href="mailto:hola@ramiroandrade.com">hola@ramiroandrade.com</a></p>
                 </div>
                 <div>
-                    <p>Barcelona · 2022</p>
+                    <p>Barcelona · 2023</p>
                 </div>
             </div>
         </div>

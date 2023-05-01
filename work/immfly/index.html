@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -18,19 +18,26 @@
     <meta name="theme-color" content="#131313" />
 </head>
 
-<body>
+<body class="light-mode">
     <main>
-        
-        <section id="hero-case-study" class="immfly">
+        <div class="case-study__header">
             <div class="wrapper">
-                <span>IMMFLY</span>
-                <h1>Designing products <br> for airline passengers</h1>
+                <p><span>Designing products for airline passengers ·</span> 3 min read</p>
+                <button class="mode-toggle" onclick="myFunction()"></button>
             </div>
+            <div id="progress-bar"></div> 
+        </div>
+        <section id="hero-case-study" class="immfly">
             <picture>
                 <source srcset="" type="image/webp">
                 <img src="../../assets/img/immfly/img-immfly.png">
             </picture>
-            <div class="case-study__info-wrapper">
+            <div class="wrapper">
+                <span class="client">IMMFLY</span>
+                <h1>Designing products <br> for airline passengers</h1>
+                <p>A quick glimpse of some of the products and projects I'm working on at Immfly.</p>
+            </div>
+            <!-- <div class="case-study__info-wrapper">
                 <div class="case-study__info">
                     <div>
                         <h4>Role</h4>
@@ -45,15 +52,8 @@
                         <p>Figma</p>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </section>
-        <div class="case-study__header">
-            <div class="wrapper">
-                <p><span>Designing products for airline passengers ·</span> 3 min read</p>
-            </div>
-            <button class="mode-toggle" onclick="myFunction()"></button>
-            <div id="progress-bar"></div> 
-        </div>
         <section id="case-study" class="scroll-point">
             <div class="wrapper">
                 <p class="case-study__chapter">Introduction</p>
@@ -195,7 +195,7 @@
                     <p>Write me at <a href="mailto:hola@ramiroandrade.com">hola@ramiroandrade.com</a></p>
                 </div>
                 <div>
-                    <p>Barcelona · 2022</p>
+                    <p>Barcelona · 2023</p>
                 </div>
             </div>
         </div>

@@ -1,3 +1,10 @@
-<svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M7.88553 0.00160395C7.83188 0.000536381 7.77809 0 7.72417 0C3.45823 0 0 3.35786 0 7.5C0 11.6421 3.45823 15 7.72417 15C10.3093 15 12.5978 13.7669 13.9999 11.8734C9.80845 11.79 6.43709 8.46478 6.43709 4.375C6.43709 2.74298 6.97394 1.23271 7.88553 0.00160395Z" fill="#F0F2F5"/>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#BFBFBF;}
+</style>
+<path class="st0" d="M12.9,4.5c-0.1,0-0.1,0-0.2,0C8.5,4.5,5,7.9,5,12s3.5,7.5,7.7,7.5c2.6,0,4.9-1.2,6.3-3.1
+	c-4.2-0.1-7.6-3.4-7.6-7.5C11.4,7.2,12,5.7,12.9,4.5z"/>
 </svg>
