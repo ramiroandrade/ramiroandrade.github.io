@@ -38,7 +38,7 @@ body {
     background-color: #Fff;
     transition: .6s all;
 }
-body#home, body#home-projects {
+body #home, {
     background-color: #f2f2f2;
 }
 img {
@@ -62,7 +62,7 @@ p {
     margin-top: 0;
     line-height: 2rem;
     font-weight: 300;
-    color: #333;
+    color: #fff;
 }
 p.destacado {
     font-size: 1.25rem;
@@ -311,24 +311,24 @@ opacity: .8;
     background: #f6f6f6;
     display: block;
 }
-/* .card.devoto {
-    background: linear-gradient(0deg, #1D1D1D 43.23%, #243E8F 100%);
+.card.devoto {
+    background: linear-gradient(0deg, #131313 50%, #243E8F 100%);
 }
 .card.gubuy {
-    background: linear-gradient(0deg, #131313 45%, #558CDE 100%);
+    background: linear-gradient(0deg, #131313 50%, #71369F 100%);
 }
 .card.immfly {
-    background: linear-gradient(0deg, #1D1D1D 43.75%, #E12B56 100%);
+    background: linear-gradient(0deg, #131313 50%, #E12B56 100%);
 }
 .card.emochi {
-    background: linear-gradient(0deg, #1D1D1D 43.75%, #71369F 100%);
+    background: linear-gradient(0deg, #131313 50%, #71369F 100%);
 }
 .card.dgi {
-    background: linear-gradient(0deg, #1D1D1D 43.75%, #409376 100%);
+    background: linear-gradient(0deg, #131313 50%, #409376 100%);
 }
 .card.nextbus {
-    background: linear-gradient(0deg, #1D1D1D 43.23%, #243E8F 100%);
-} */
+    background: linear-gradient(0deg, #131313 50%, #243E8F 100%);
+}
 .project {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -712,7 +712,7 @@ opacity: .8;
 }
 #hero-case-study img {
     margin: 0 auto;
-    max-width: 1000px;
+    /* max-width: 1000px; */
 }
 #case-study .wrapper, #post .wrapper {
     padding: 0 20px;
@@ -1162,8 +1162,8 @@ body.no-scroll main {
     -webkit-transition: .5s ease-in-out;
     -o-transition: .5s ease-in-out;
     transition: .5s ease-in-out;
-    -webkit-box-shadow: 0 0 0 0 #f2f2f2, 0 0 0 0 #f2f2f2;
-            box-shadow: 0 0 0 0 #f2f2f2, 0 0 0 0 #f2f2f2;
+    -webkit-box-shadow: 0 0 0 0 #222, 0 0 0 0 #222;
+            box-shadow: 0 0 0 0 #222, 0 0 0 0 #222;
     cursor: pointer;
   }
   .menu__wrapper .menu.case-study {
@@ -1175,7 +1175,7 @@ body.no-scroll main {
     right: 12px;
     width: 26px;
     height: 2px;
-    background: #333;
+    background: #fff;
     display: block;
     -webkit-transform-origin: center;
     -ms-transform-origin: center;
@@ -1193,10 +1193,10 @@ body.no-scroll main {
     display: block;
     width: 100%;
     height: 100%;
-    background: #333;
+    background: #fff;
 }
 .case-study .hamburger:after, .case-study .hamburger:before, .case-study .hamburger {
-    background: #bfbfbf;
+    background: #fff;
 }
 .menu__wrapper .hamburger:before { 
     top: -8px; 
@@ -1208,10 +1208,10 @@ body.no-scroll main {
     display: none; 
 }
 .menu-open .menu {
-    -webkit-box-shadow: 0 0 0 100vw #f2f2f2, 0 0 0 100vh #f2f2f2;
-            box-shadow: 0 0 0 100vw #f2f2f2, 0 0 0 100vh #f2f2f2;
+    -webkit-box-shadow: 0 0 0 100vw #131313, 0 0 0 100vh #131313;
+            box-shadow: 0 0 0 100vw #131313, 0 0 0 100vh #131313;
     border-radius: 0;
-    background: #f2f2f2;
+    background: #131313;
 }
 .menu-open .menu .hamburger {
     -webkit-transform: rotate(45deg);
@@ -1253,7 +1253,7 @@ body.no-scroll main {
     pointer-events: none;
 }
 .menu__content a {
-    color: #333;
+    color: #fff;
     pointer-events: initial;
 }
 .menu__content ul {
@@ -1379,24 +1379,24 @@ body.no-scroll main {
         height: 320px;
         padding: 0 0 0 50px;
     }
-    /* .card.devoto {
-        background: linear-gradient(90deg, #131313 45%, #243E8F 100%);
+    .card.devoto {
+        background: linear-gradient(90deg, #131313 50%, #243E8F 100%);
     }
     .card.gubuy {
-        background: linear-gradient(90deg, #131313 45%, #558CDE 100%);
+        background: linear-gradient(90deg, #131313 50%, #71369F 100%);
     }
     .card.immfly {
-        background: linear-gradient(90deg, #131313 45%, #BE4B4D 100%);
+        background: linear-gradient(90deg, #131313 50%, #E12B56 100%);
     }
     .card.emochi {
-        background: linear-gradient(90deg, #131313 45%, #71369F 100%);
+        background: linear-gradient(90deg, #131313 50%, #71369F 100%);
     }
     .card.dgi {
-        background: linear-gradient(90deg, #131313 45%, #409376 100%);
+        background: linear-gradient(90deg, #131313 50%, #409376 100%);
     }
     .card.nextbus {
-        background: linear-gradient(90deg, #131313 45%, #243E8F 100%);
-    } */
+        background: linear-gradient(90deg, #131313 50%, #243E8F 100%);
+    }
     .card.devoto .project__img {
         background: url(../img/img-devoto_gradient.png) right center no-repeat;
         background-size: contain;
@@ -1808,7 +1808,7 @@ body.no-scroll main {
         left: 0;
         right: 100%;
         bottom: 3px;
-        background: #6C9DFF;
+        background: #002DCA;
         height: 4px;
         -webkit-transition-property: right;
         -o-transition-property: right;
@@ -1851,7 +1851,7 @@ body.no-scroll main {
             transform: translate3d(0, 0, 0);
 }
 
-/* Light mode */
+/* Dark mode */
 body.dark-mode {
     background-color: #131313;
 }
@@ -1870,7 +1870,7 @@ body.dark-mode {
 .dark-mode .no-bgn {
  background-color: transparent;
 }
-.dark-mode .case-study__h2, .dark-mode .case-study__h3, .dark-mode .case-study__h4, .dark-mode .case-study__ol li span {
+.dark-mode .case-study__h2, .dark-mode .case-study__h3, .dark-mode .case-study__h4, .dark-mode .case-study__ol li span, .dark-mode #subhero.about h1, .dark-mode #subhero.about .wrapper p, .dark-mode #about p, .dark-mode #subhero.work p, .dark-mode #about p, .dark-mode #subhero.work h1  {
     color: #E3E3E3;
 }
 .dark-mode .case-study__h2, .dark-mode .case-study__h3 {
@@ -1886,14 +1886,14 @@ body.dark-mode {
     color: #e3e3e3;
 }
 .dark-mode #mini-footer {
-    border-top: solid 1px #1c1c1c;
+    border-top: solid 1px #2F2F2F;
 }
 /* .dark-mode a {
     text-decoration-color: rgba(51, 51, 51, 0.65);
 } */
 .dark-mode .case-study__navigator .card {
-    background: #1c1c1c;
-    border: solid 1px #363636;
+    background: #222222;
+    border: solid 1px #434B54;
 }
 .dark-mode .case-study__header {
     background-color: #1c1c1c;
@@ -1910,6 +1910,64 @@ body.dark-mode {
 video { 
     clip-path: inset(2px 0);
 }
+
+/* Shots */
+.dark-mode #shot-post {
+    background-color: #1c1c1c;
+}
+.dark-mode #shot-post h1, .dark-mode #shot-post p, .dark-mode #shot-post .back-button input {
+    color: #E3E3E3;
+}
+.dark-mode #shot-page .img-wrapper__no-padding {
+    background-color: #23262A;
+}
+.dark-mode #shot-page .caption {
+    color: #E3E3E3;
+}
+
+/* Home */
+.dark-mode #hero {
+    color: #fff;
+    background: url('../img/hero-bgn.png') center center no-repeat;
+    background-size: cover;
+}
+.dark-mode #hero h1 {
+    color: #fff;
+}
+.dark-mode #hero p.name {
+    color: #fff;
+}
+.dark-mode #hero p.work {
+    color: #fff;
+}
+.section-header h2, .section-header a {
+    color: #fff;
+}
+.dark-mode #mini-about a {
+    color: #fff;
+    background-color: #222222;
+    border: 1px solid #3A3D49;
+}
+.dark-mode #mini-about a p  {
+    color: #fff;
+}
+.dark-mode #uishots a {
+    background-color: #222222;
+}
+.dark-mode .card {
+    border-color: #3A3D49;
+}
+.dark-mode .card .project__title, .dark-mode .card .project__description  {
+    color: #fff;
+}
+.dark-mode .about__list__wrapper {
+    background-color: #222222;
+    border-color: #3A3D49;
+}
+.dark-mode .about__list__wrapper h2 {
+    color: #E3E3E3;
+}
+
 /* Utilities */
 .text-center {
     text-align: center;
