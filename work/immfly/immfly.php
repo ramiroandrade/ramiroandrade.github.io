@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
+<? if($_GET['auth'] == "secret"){ ?>
 
 <head>
     <meta charset="utf-8">
@@ -257,4 +256,4 @@
     </script>
 </body>
 
-</html>
+<? } ?>
