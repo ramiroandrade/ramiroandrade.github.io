@@ -250,8 +250,11 @@ margin-left: -26px;
 opacity: .8;
 }
 /* Hero de Home, About, Blog y Work */
-#hero, #subhero, #subhero.about, #uishots, #mini-about {
+#hero, #subhero, #subhero.about, #mini-about {
     padding-top: 120px;
+    margin-bottom: 80px;
+}
+#uishots {
     margin-bottom: 80px;
 }
 #subhero h1 {
