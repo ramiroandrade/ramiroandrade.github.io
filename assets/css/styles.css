@@ -1264,6 +1264,9 @@ body.no-scroll main {
     padding-left: 0;
     margin-bottom: 2.5rem;
 }
+.menu__content p {
+        color: #FFF;
+}
 .menu__item {
     font-family: 'Product Sans Bold';
     font-size: 3rem;
